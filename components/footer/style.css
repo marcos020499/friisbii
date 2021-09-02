@@ -1,0 +1,44 @@
+/*FOOTER*/
+.footer {
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 83%;
+  height: 530px;
+  margin: 0% 0 0 0;
+  z-index: 1;
+  padding: 0% 0 100% -1px; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
+  background: url(https://res.cloudinary.com/marcos020499/image/upload/v1630616685/_untitledimage_7_ff2ndi.png)
+      left/25% auto,
+    url(https://res.cloudinary.com/marcos020499/image/upload/v1630617719/_untitledimage_10_y1upcm.png)
+      right/12%,
+    black; /* Color between the shapes only on the content and not the padding*/
+  background-repeat: no-repeat;
+}
+.logoFooter {
+  margin: 5% 0 5% 0;
+}
+.infoFooter {
+  display: flex;
+  flex-direction: row;
+  margin: 0 25% 0 25%;
+  justify-content: space-between;
+}
+.textFooter {
+  display: flex;
+  margin: 0 25% 0 25%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.iconFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.iconImg {
+  z-index: 2;
+  width: 30px;
+  margin: 2%;
+}

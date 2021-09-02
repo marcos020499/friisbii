@@ -1,0 +1,45 @@
+/*CONTENT HOME*/
+.contentHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 900px;
+  height: 100px;
+  padding: none;
+  margin: none;
+  border-radius: 12px;
+  background: black;
+}
+.contentHomeIndex {
+  width: 900px;
+  height: 100px;
+  padding: none;
+  margin: none;
+  display: flex;
+  margin: auto;
+  border-radius: 12px;
+  background: black;
+}
+.inputContainer {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 20px 0 20px;
+  display: inline-block;
+  justify-content: left;
+}
+.inputButton {
+  display: inline;
+}
+.inputInfo {
+  padding: 10px 40px 10px 14px;
+  margin: 4px;
+  font-size: 10px;
+  border-radius: 7px;
+  border: none;
+}
+.buttonInfo {
+  font-size: 10px;
+  border-radius: 7px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  background: #ffd800;
+}

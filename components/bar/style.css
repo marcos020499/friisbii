@@ -1,0 +1,21 @@
+/*Header*/
+.header {
+  background-color: #ffd800;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  text-align: left;
+}
+.headerLinks {
+  text-align: right;
+  display: flex;
+}
+.Register {
+  border: none;
+}
+
+.Sesion {
+  background-color: #ffd800;
+  border: 1px solid black;
+}

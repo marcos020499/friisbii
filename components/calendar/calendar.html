@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.ui.datepicker-es.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
+<script>
+  $(function () {
+  $.datepicker.setDefaults($.datepicker.regional["es"]);
+  $("#datepicker").datepicker({
+  firstDay: 1
+  });
+  });
+  </script>
+  <style>
+    .ui-widget {
+      max-width: 180px;
+      min-width: 180px;
+      min-height: 200vw;
+    font-size: .6em;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="calendar" style="margin: 5%; height: 200px;">
+  <div id="datepicker">
+    <input checked type="text"  placeholder="Fecha de salida" class="inputCalendar"/>
+  </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+/*
+color: #FFD800;
+color: #222529;
+color: #6569DF;
+color: #399ACA;
+color: #24D5D8;
+color: #FECD2F;
+color: #818A91;
+color: #DDDDDD;
+COLOR: #ECEEEF;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Geomanist', sans-serif;
+*/
+
+.buttonReturn {
+  width: 112px;
+  height: 42px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+}
+.buttonPay {
+  background-color: #ffd800;
+  width: 42px;
+  height: 42px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 1000;
+  font-family: "Montserrat", sans-serif;
+}
+.buttonSesion {
+  width: 112px;
+  height: 42px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #ffd800;
+  border: 1px solid black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+}
+.buttonRegisterHeader {
+  background-color: white;
+  width: 112px;
+  height: 42px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 1000;
+  font-family: "Montserrat", sans-serif;
+}
+.buttonSave {
+  background-color: #ffd800;
+  width: 110px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+}
+.buttonRegister {
+  background-color: #ffd800;
+  width: 170px;
+  height: 46px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Geomanist", sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.buttonOk {
+  background-color: #ffd800;
+  width: 196px;
+  height: 42px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 1000;
+}
+.buttonContact {
+  background-color: #ffd800;
+  width: 244px;
+  height: 37px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 13px;
+  font-weight: 1000;
+}
+.buttonTravel {
+  background-color: #ffd800;
+  width: 407px;
+  height: 46px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 1000;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+/*Header*/
+.objHeader {
+  width: 100%;
+}
+
+/*Panel de informacion partner*/
+.panelInfoPartner {
+  display: flex;
+  flex-direction: row;
+  margin: -9% 0 0 0;
+  padding: 0 0 110% 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
+  height: 100px; /* to illustrate the space for the content */
+  background: url(https://res.cloudinary.com/marcos020499/image/upload/v1630598029/_untitledimage_2_auxz70.png)
+      top / 100%,
+    url(https://res.cloudinary.com/marcos020499/image/upload/v1630601145/_untitledimage_4_mpqdne.png)
+      bottom/100% auto; /* Color between the shapes only on the content and not the padding*/
+  background-repeat: no-repeat;
+}
+.titlePartner {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.pPartnerTitle {
+  width: 40%;
+  color: white;
+}
+.panel {
+  margin: 8% 30% 5% 9%;
+  max-width: 83%;
+}
+.iconPartner {
+  width: 40px;
+}
+.iconContP {
+  display: flex;
+  margin: 25% 0 0 0;
+}
+.iconContainer {
+  padding: 3vw;
+  width: 18vw;
+  text-align: center;
+}
+.iconContainerOptions {
+  display: flex;
+  margin: 28% 0 0 0;
+  color: white;
+  flex-direction: column;
+}
+.titleOptions {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  padding: 0 30% 0 30%;
+  text-align: center;
+}
+.containerGroup {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 4% 10% 4% 10%;
+}
+.IconPartner {
+  width: 70px;
+  height: 30px;
+}
+.iconImgP {
+  width: 40px;
+  height: 40px;
+}
+.iconTextP {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  top: -20px;
+  font-size: 9px;
+}
+.timeContainer {
+  margin: 17% 0 0 0;
+}
+.titleTime {
+  text-align: center;
+}
+.buttonTime {
+  display: flex;
+  margin: 4% 0 0 0;
+  padding: 0% 0% 10% 0;
+  justify-content: center;
+}
+.partnerTime {
+  display: flex;
+  flex-direction: row;
+}
+.bar {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffd800;
+  position: absolute;
+  max-width: 17%;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  min-height: 100%;
+  right: 0;
+  top: 0;
+}
+.startContainer {
+  background-color: black;
+  color: white;
+  width: 110%;
+  height: 230px;
+  margin: 0 0 0 -13%;
+  display: flex;
+  flex-direction: row;
+}
+.startInfo {
+  margin: 5% 0 0 10%;
+}
+.startTitle {
+  font-family: "Montserrat", sans-serif;
+}
+.startP {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  width: 75%;
+  font-weight: lighter;
+}
+.imgStart {
+  margin: 40px 100px 0 0;
+  width: 200px;
+  height: 150px;
+}
+
+/*FOOTER*/
+.objFooter {
+  margin: 0% 0 0 -13%;
+  width: 110%;
+  height: 390px;
+}

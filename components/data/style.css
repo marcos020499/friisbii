@@ -1,0 +1,48 @@
+.dataContainer {
+  width: 270px;
+  height: 400px;
+  border: 1px solid black;
+}
+.imgData {
+  width: 100%;
+  opacity: 100%;
+  filter: alpha(opacity=100%);
+  -webkit-box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+  filter: shadow(color=#999999, direction=135, strength=2);
+}
+.dataInfo {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  position: relative;
+  margin: -45px 0 0 10px;
+}
+.dataTitle {
+  font-size: 13px;
+  padding: 0%;
+  margin: 0%;
+}
+.dataP {
+  color: #818a91;
+  margin: 15px 0 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+.dataInput {
+  color: #818a91;
+  margin: 0px 0 0 10px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  width: 110px;
+}
+.dataPrice {
+  padding: 5% 0 5% 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+.dataButton {
+  display: flex;
+  justify-content: center;
+}
