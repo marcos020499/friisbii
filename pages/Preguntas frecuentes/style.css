@@ -1,0 +1,74 @@
+/*
+color: #FFD800;
+color: #222529;
+color: #6569DF;
+color: #399ACA;
+color: #24D5D8;
+color: #FECD2F;
+color: #818A91;
+color: #DDDDDD;
+COLOR: #ECEEEF;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Geomanist', sans-serif;
+*/
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+/*Header*/
+.objHeader {
+  width: 100%;
+}
+
+/*Panel de informacion partner*/
+.conditionContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: -4% 0 0 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
+  /* to illustrate the space for the content */
+  background: black;
+}
+.conditionContainerInfo {
+  width: 83%;
+}
+.conditionTitle {
+  font-family: "Geomanist", sans-serif;
+  color: white;
+  font-size: 35px;
+  padding: 5% 0 3% 0;
+  text-align: center;
+}
+.conditionInfo {
+  display: flex;
+  margin: 0 15% 0 15%;
+  flex-direction: row;
+  color: white;
+}
+.conditionP {
+  letter-spacing: 2px;
+  line-height: 35px;
+  font-size: 12px;
+}
+.bar {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffd800;
+  max-width: 17%;
+  min-width: 17%;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: block;
+  position: fixed;
+  overflow: auto;
+  right: 0;
+  top: 0;
+}
+/*FOOTER*/
+.objFooterP {
+  margin: 0% 0 0 -13%;
+  min-width: 140%;
+  min-height: 600px;
+}

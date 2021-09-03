@@ -3,25 +3,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 600px;
+  width: 1100px;
   height: 200px;
   padding: none;
   margin: none;
   border-radius: 12px;
   background: black;
 }
-.contentHomeIndex {
-  width: 600px;
-  height: 200px;
-  padding: none;
-  margin: none;
-  display: flex;
-  margin: auto;
-  border-radius: 12px;
-  background: black;
-}
+
 .Icons {
   display: flex;
+  width: 100%;
+  margin: -10% 0 0 0;
   justify-content: center;
   flex-direction: row;
   text-align: center;
@@ -30,26 +23,33 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
-  max-width: 70px;
-  min-width: 70px;
+  max-width: 90px;
+  min-width: 90px;
+  max-height: 100px;
+  min-height: 100px;
   font-size: 9px;
-  margin: 0 15px 0 0;
+  margin: 0 25px 0 0;
 }
 .Icon:hover {
   background: #ffd800;
   border-radius: 10px;
   color: black;
 }
-.IconText {
+.IconTextHome {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
   color: white;
 }
-.iconImg {
+.iconImgHome {
   align-items: center;
-  width: 30px;
+  max-width: 95px;
+  min-width: 95px;
+  max-height: 50px;
+  min-height: 50px;
 }
 .inputContainer {
   font-family: "Montserrat", sans-serif;
-  margin: 0 20px 0 20px;
+  margin: 10px 35px 0 35px;
   display: inline-block;
   justify-content: left;
 }
@@ -59,12 +59,18 @@
 .inputInfo {
   margin: 4px;
   font-size: 10px;
-  border-radius: 7px;
+  border-radius: 10px;
   border: none;
 }
+.inputInfo::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: black;
+}
 .buttonInfo {
-  font-size: 10px;
-  padding: 7px 20px 7px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 15px 70px 18px 40px;
   border-radius: 7px;
   border: none;
   font-family: "Montserrat", sans-serif;

@@ -12,6 +12,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <link href="http://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+
+function get_action(form) 
+{
+    var v = grecaptcha.getResponse();
+    if(v.length == 0)
+    {
+        document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+        return false;
+    }
+    else
+    {
+         document.getElementById('captcha').innerHTML="Captcha completed";
+        return true; 
+    }
+}
+
+
+</script>
 </head>
 
 <body>
@@ -22,17 +42,49 @@
   </div>
   <div class="Home">
     <div class="containerHome">
-      <h1>Friisbii Tu solución</h1>
-      <p>Tenemos el viaje y el espacio que necesitas</p>
-      <p>Comienza por buscar tu viaje llenando los campos a continuación</p>
+      <div style="margin: 3% 0 3% 0;">
+        <h1 class="titleHome">Friisbii <br>Tu solución</h1>
+        <p class="pHome">Tenemos el viaje y el espacio que necesitas</p>
+        <p class="pHome">Comienza por buscar tu viaje llenando los campos a continuación</p>
+      </div>
       <object data="../../components/contentHome/contentHome.html" class="contentHomeIndex"> 
       </object>
-      <div>
-        <h2>Confía en Friisbii</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magni cupiditate eligendi repellat quasi, consequuntur quidem pariatur. Pariatur dicta exercitationem unde ad consequatur aspernatur recusandae voluptatum ab, quaerat eaque magnam!</p>
+      <div class="homeInfo">
+        <div class="infoText">
+          <h2>Confía en Friisbii</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magni cupiditate eligendi repellat quasi, consequuntur quidem pariatur. Pariatur dicta exercitationem unde ad consequatur aspernatur recusandae voluptatum ab, quaerat eaque magnam!</p>
+        </div>
+        <div class="imgInfoC">
+          <img class="imgInfo" src="https://res.cloudinary.com/marcos020499/image/upload/v1630607411/descarga_wedpdz.jpg" alt="">
+          <img class="imgInfoTwo" src="https://res.cloudinary.com/marcos020499/image/upload/v1630607411/descarga_wedpdz.jpg" alt="">
+        </div>
       </div>
-      <div class="containerInfo">
-        <h2>¿Tienes un vehiculo que te gustaria trabajar?</h2>
+      <div class="registerContainer"> 
+        <div class="containerInfo">
+          <h2 class="registerTitle">¿Tienes un vehiculo y te <br> gustaria trabajar?</h2>
+          <p class="registerP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae similique consequatur illo deserunt quia maiores, voluptatibus at voluptatem, fugit nihil aliquam labore eligendi repellendus</p>
+          <button class="Processbutton">Regístrate</button>
+        </div>
+        <div>
+          <img class="imgInfoTwo" src="https://res.cloudinary.com/marcos020499/image/upload/v1630607411/descarga_wedpdz.jpg" alt="">
+        </div>
+      </div>
+      <div class="iconContainer">
+        <div>
+          <img class="iconImg" src="https://res.cloudinary.com/marcos020499/image/upload/v1630620342/Back_landing_-friisbii-08_hx8ls9.svg" alt="">
+          <h4 class="iconH4">Busca precisamente el vehículo que necesitas</h4>
+          <p class="iconP">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, fugit officia! Mollitia, est? Provident est voluptatum, totam aut</p>
+        </div>
+        <div>
+          <img class="iconImg" src="https://res.cloudinary.com/marcos020499/image/upload/v1630620342/Back_landing_-friisbii-09_wxgz6z.svg" alt="">
+          <h4 class="iconH4">Comparte o renta multiples espacios</h4>
+          <p class="iconP">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, fugit officia! Mollitia, est? Provident est voluptatum, totam aut</p>
+        </div>
+        <div>
+          <img class="iconImg" src="https://res.cloudinary.com/marcos020499/image/upload/v1630620342/Back_landing_-friisbii-10_uqklz5.svg" alt="">
+        <h4 class="iconH4">Totalmente eficiente, puedes confiar en Friisbii</h4>
+        <p class="iconP">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, fugit officia! Mollitia, est? Provident est voluptatum, totam aut</p>
+        </div>
       </div>
       <div class="contact">
         <div class="contactInfo">
@@ -40,13 +92,15 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at nulla consequatur, sint modi nemo debitis praesentium distinctio error omnis odio sit unde cumque magni aperiam similique, esse possimus dolorem.</p>
         </div>
           <div class="contactForm">
-            <form action="">
+            <form action="" class="form">
               <input class="inputForm" type="text" placeholder="Nombre" style="margin-top: 4%;">
               <input class="inputForm" type="text" placeholder="Email">
               <input class="inputForm" type="text" placeholder="Teléfono">
-              <input class="inputForm" type="text" placeholder="Mensaje" style="padding-bottom: 15%;">
-              <h3>Recapcha</h3>
-              <button class="Bigbutton">Buscar</button>
+              <input class="inputForm" type="text" placeholder="Mensaje" style="padding-bottom: 38%;">
+              
+              <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6Lei-UIcAAAAAFEmJhB0Ujqjh_Q_NH8GPGSZsjGf" style="display: flex; justify-content: center; margin: 3% 0 5% 0;"></div>
+            <span id="captcha" style="color:red" ></span>
+            <button class="Bigbutton">Buscar</button>
             </form>
           </div>
         </div>
@@ -57,14 +111,16 @@
     </div>
     <div class="verticalBar">
       <h1 class="titleBar">Home con buscador</h1>
+      <input type="text" placeholder="Origen" class="originInput">
       <object data="../../components/origin/origin.html" class="objOrigin"> 
       </object>
+      <input checked type="text"  placeholder="Fecha de salida" class="inputCalendar"/>
       <object data="../../components/calendar/calendar.html" class="objCalendar"> 
       </object>
     </div>
   </div>
 </div>
-
+<script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 </body>
 
 </html>

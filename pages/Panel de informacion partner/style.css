@@ -119,30 +119,32 @@ body {
   margin: -9% 0 0 0;
   padding: 0 0 110% 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
   height: 100px; /* to illustrate the space for the content */
-  background: url(https://res.cloudinary.com/marcos020499/image/upload/v1630598029/_untitledimage_2_auxz70.png)
-      top / 100%,
-    url(https://res.cloudinary.com/marcos020499/image/upload/v1630601145/_untitledimage_4_mpqdne.png)
-      bottom/100% auto; /* Color between the shapes only on the content and not the padding*/
-  background-repeat: no-repeat;
+  background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1630620395/trabaja_con_nosotros-01_vctsxs.svg);
+  background-size: 83%;
 }
 .titlePartner {
+  font-size: 33px;
   font-family: "Montserrat", sans-serif;
   color: white;
 }
 .pPartnerTitle {
-  width: 40%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  width: 35%;
   color: white;
 }
 .panel {
-  margin: 8% 30% 5% 9%;
+  margin: 15% 30% 5% 9%;
   max-width: 83%;
 }
 .iconPartner {
-  width: 40px;
+  width: 120px;
 }
 .iconContP {
+  font-family: "Montserrat", sans-serif;
   display: flex;
-  margin: 25% 0 0 0;
+  margin: 28% 0 0 0;
 }
 .iconContainer {
   padding: 3vw;
@@ -151,13 +153,13 @@ body {
 }
 .iconContainerOptions {
   display: flex;
-  margin: 28% 0 0 0;
+  margin: 26% 0 0 0;
   color: white;
   flex-direction: column;
 }
 .titleOptions {
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 35px;
   padding: 0 30% 0 30%;
   text-align: center;
 }
@@ -165,6 +167,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: baseline;
   margin: 4% 10% 4% 10%;
 }
 .IconPartner {
@@ -172,19 +175,24 @@ body {
   height: 30px;
 }
 .iconImgP {
+  justify-content: center;
   width: 40px;
   height: 40px;
 }
 .iconTextP {
+  justify-content: center;
   font-family: "Montserrat", sans-serif;
   position: relative;
   top: -20px;
-  font-size: 9px;
+  font-size: 12px;
 }
 .timeContainer {
   margin: 17% 0 0 0;
 }
 .titleTime {
+  padding: 0 38% 0 38%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
   text-align: center;
 }
 .buttonTime {
@@ -194,9 +202,15 @@ body {
   justify-content: center;
 }
 .partnerTime {
+  margin: 0 10% 0 10%;
   display: flex;
   flex-direction: row;
 }
+.pTime {
+  margin: 0% 4% 0 0;
+  font-family: monospace;
+}
+
 .bar {
   font-family: "Montserrat", sans-serif;
   background-color: #ffd800;
@@ -205,23 +219,35 @@ body {
   font-size: 13px;
   color: white;
   text-align: center;
-  min-height: 100%;
+  min-height: 429%;
+  overflow-y: auto;
   right: 0;
   top: 0;
+}
+.bar1 {
+  height: auto;
+  width: 13%;
+  top: 0;
+  right: 0;
+  background-color: #ffd800;
+  position: inline;
+  overflow-y: auto;
+  display: block;
 }
 .startContainer {
   background-color: black;
   color: white;
-  width: 110%;
-  height: 230px;
+  min-width: 116%;
+  height: auto;
   margin: 0 0 0 -13%;
   display: flex;
   flex-direction: row;
 }
 .startInfo {
-  margin: 5% 0 0 10%;
+  margin: 10% 0 7% 11%;
 }
 .startTitle {
+  font-size: 35px;
   font-family: "Montserrat", sans-serif;
 }
 .startP {
@@ -231,14 +257,14 @@ body {
   font-weight: lighter;
 }
 .imgStart {
-  margin: 40px 100px 0 0;
-  width: 200px;
-  height: 150px;
+  margin: 25% 150px 0 0;
+  width: 400px;
+  height: 250px;
 }
 
 /*FOOTER*/
-.objFooter {
+.objFooterP {
   margin: 0% 0 0 -13%;
-  width: 110%;
-  height: 390px;
+  min-width: 140%;
+  min-height: 600px;
 }

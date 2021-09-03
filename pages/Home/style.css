@@ -97,13 +97,18 @@ body {
   margin: 0%;
   padding: 0%;
 }
+.objCalendar {
+  width: 120%;
+  height: 230px;
+}
 
 /*Calendar*/
 .inputCalendar {
   background: white;
-  width: 150px;
-  border: none;
-  padding: 0 2vw 0vw 10vw;
+  position: relative;
+  top: 3%;
+  width: 74%;
+  left: 7%;
 }
 
 /*HOME*/
@@ -130,67 +135,179 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
-  padding: 0%;
+  padding: 3% 0 0 0;
   margin: 0%;
   max-width: 83%;
   min-width: 83%;
   background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1630620340/Back_landing_-friisbii-02_z8p193.svg);
   background-size: 100%;
 }
+.titleHome {
+  font-family: "Geomanist", sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+.pHome {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 16px;
+  padding: 0.5% 0 1.5% 0;
+}
+.homeInfo {
+  justify-content: center;
+  width: 80%;
+  margin: 5% 14% 0 14%;
+  display: flex;
+  flex-direction: row;
+}
+.infoText {
+  width: 50%;
+  padding: 10% 10% 0 0;
+  text-align: left;
+}
+.imgInfo {
+  z-index: 1;
+  width: 350px;
+  height: 220px;
+  position: relative;
+  top: 20%;
+  right: 15%;
+  border-radius: 12px;
+}
+.imgInfoTwo {
+  z-index: 2;
+  width: 350px;
+  height: 220px;
+  border-radius: 12px;
+}
+.imgInfoC {
+  display: flex;
+  flex-direction: column;
+}
 .containerInfo {
-  width: 65vw;
-  height: 35vw;
-  background-color: black;
+  margin: 0 0 0 12%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.registerContainer {
+  margin: 32% 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
+.registerTitle {
+  text-align: left;
+  font-family: "Geomanist", sans-serif;
+  font-size: 35px;
+  color: white;
+  margin: 0 0 6% 0;
+}
+.registerP {
+  text-align: left;
+  width: 70%;
+  color: white;
+  margin: 0 0 4% 0;
+}
+.iconContainer {
+  display: flex;
+  padding: 0 0 20% 0;
+  flex-direction: row;
+}
+.iconImg {
+  position: relative;
+  top: 60%;
+  width: 90%;
+}
+.iconH4 {
+  position: relative;
+  top: 15%;
+  left: 18%;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  width: 60%;
+  text-align: center;
+}
+.iconP {
+  position: relative;
+  top: 20%;
+  left: 18%;
+  font-size: 15px;
+  width: 60%;
 }
 .contact {
-  margin: 0 20% 0 5%;
+  margin: 4% 20% 10% 5%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 .contactInfo {
   text-align: left;
-  margin: 0 7% 0 0;
+  margin: 10% 7% 0 0;
 }
 .contactForm {
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   background: black;
   flex-direction: column;
   font-size: 8px;
+  height: 110%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
 }
+.form {
+  padding: 3% 0 0 0;
+}
 .inputForm {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  padding: 10px 0 2% 0;
+  width: 80%;
+  border-radius: 13px;
+}
+.inputForm::placeholder {
+  font-size: 10p;
+  color: black;
+}
+.buttonForm {
 }
 .titleBar {
   color: white;
 }
-
+.originInput {
+  position: relative;
+  top: 3%;
+  width: 74%;
+  left: 8%;
+}
+.objOrigin {
+  margin: 0% 0 0 5%;
+  width: 84%;
+}
 /*CONTENT HOME*/
 .contentHome {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 600px;
-  height: 200px;
+  margin: 10% 0 0 0;
+  width: 100px;
+  height: 350px;
   padding: none;
-  margin: none;
   border-radius: 12px;
   background: black;
 }
 .contentHomeIndex {
-  width: 600px;
-  height: 200px;
-  padding: none;
-  margin: none;
-  display: flex;
   margin: auto;
+  width: 1100px;
+  height: 350px;
+  display: flex;
   border-radius: 12px;
   background: black;
 }
 /*FOOTER*/
 .objFooter {
-  margin: 0%;
+  position: relative;
+  top: 100px;
+  margin: 0% 0 0 0;
   width: 120.5%;
   min-height: 600px;
 }
