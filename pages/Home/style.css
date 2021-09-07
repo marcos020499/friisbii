@@ -11,6 +11,22 @@ COLOR: #ECEEEF;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Geomanist', sans-serif;
 */
+@font-face {
+  font-family: GeomanistBook;
+  src: url(../../fonts/hinted-Geomanist-Book.woff2);
+}
+@font-face {
+  font-family: GeomanistBold;
+  src: url(../../fonts/hinted-Geomanist-Bold.woff2);
+}
+@font-face {
+  font-family: MontserratExtra;
+  src: url(../../fonts/Montserrat-ExtraLight.ttf);
+}
+@font-face {
+  font-family: MontserratL;
+  src: url(../../fonts/Montserrat-Light.ttf);
+}
 body {
   margin: 0%;
   padding: 0%;
@@ -96,6 +112,7 @@ body {
   width: 100%;
   margin: 0%;
   padding: 0%;
+  height: 150px;
 }
 .objCalendar {
   width: 120%;
@@ -106,33 +123,28 @@ body {
 .inputCalendar {
   background: white;
   position: relative;
-
 }
 
 /*HOME*/
 
 .Home {
   padding: 2% 0 0 0;
-  margin: -100px 0 0 0;
+  margin: -4% 0 0 0;
   display: flex;
   flex-direction: row;
   max-width: 100%;
+  min-width: 100%;
+  background-color: #ffd800;
   justify-content: space-between;
 }
-.verticalBar {
-  font-family: "Montserrat", sans-serif;
-  background-color: #ffd800;
-  max-width: 17%;
-  min-width: 17%;
-  font-size: 13px;
-  color: white;
-  text-align: center;
-  height: 100%;
-  display: block;
-  position: fixed;
-  overflow: auto;
-  right: 0;
-  top: 0;
+
+@media (max-width: 1024px) {
+  .objHeader {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    height: 245px;
+  }
 }
 .containerHome {
   display: flex;
@@ -140,15 +152,17 @@ body {
   flex-direction: column;
   padding: 3% 0 0 0;
   margin: 0%;
-  max-width: 83%;
-  min-width: 83%;
+  max-width: 100%;
+  min-width: 100%;
   background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1630620340/Back_landing_-friisbii-02_z8p193.svg);
-  background-size: 100%;
+  background-size: 120%;
 }
 .titleHome {
-  font-family: "Geomanist", sans-serif;
+  font-family: GeomanistBold;
+  letter-spacing: 1px;
   font-weight: bolder;
   color: white;
+  font-size: 40px;
 }
 .pHome {
   font-family: "Montserrat", sans-serif;
@@ -159,7 +173,7 @@ body {
 .homeInfo {
   justify-content: center;
   width: 80%;
-  
+
   margin: 2% 14% 0 14%;
   display: flex;
   flex-direction: row;
@@ -168,29 +182,6 @@ body {
   width: 50%;
   padding: 10% 10% 0 0;
   text-align: left;
-}
-@media (max-width: 1024px) {
-  .homeInfo{
-    margin: 2% 8% 0 8%;
-  }
-  .infoText {
-    width: 50%;
-    padding: 10% 10% 0 0;
-    text-align: left;
-  }
-  .imgInfo {
-    width: 23vw;
-    height: 16vw;
-    position: relative;
-    top: 20%;
-    right: 15%;
-    border-radius: 12px;
-  }
-  .imgInfoTwo {
-    width: 23vw;
-    height: 16vw;
-    border-radius: 12px;
-  }
 }
 .imgInfo {
   z-index: 1;
@@ -211,8 +202,63 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1024px) {
+  .homeInfo {
+    margin: 2% 8% 0 8%;
+  }
+  .infoText {
+    width: 50%;
+    padding: 10% 10% 0 0;
+    text-align: left;
+  }
+  .imgInfo {
+    width: 23vw;
+    height: 16vw;
+    position: relative;
+    top: 10vw;
+    right: 15%;
+    border-radius: 12px;
+  }
+  .imgInfoTwo {
+    width: 23vw;
+    height: 16vw;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .homeInfo {
+    margin: 0% 8% 0 8%;
+    flex-direction: column;
+  }
+  .infoText {
+    width: 100%;
+    padding: 3% 10% 0 0;
+    text-align: left;
+  }
+  .imgInfo {
+    width: 23vw;
+    height: 16vw;
+    position: relative;
+    top: 80%;
+    right: 15%;
+    border-radius: 12px;
+  }
+  .imgInfoTwo {
+    width: 23vw;
+    height: 16vw;
+    border-radius: 12px;
+  }
+}
 @media (max-width: 1200px) {
-  .imgInfoC{
+  .imgInfoC {
+    position: relative;
+    top: -30%;
+  }
+}
+@media (max-width: 768px) {
+  .imgInfoC {
+    justify-content: center;
+    margin: auto;
     position: relative;
     top: -30%;
   }
@@ -310,6 +356,7 @@ body {
 }
 .titleBar {
   color: white;
+  font-size: 30px;
 }
 .originInput {
   position: relative;
@@ -322,30 +369,26 @@ body {
   width: 84%;
 }
 /*CONTENT HOME*/
-.contentHome {
+
+.contentHomeIndex {
+  margin: auto;
+  width: 80%;
+  height: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 10% 0 0 0;
-  width: 100px;
-  height: 350px;
-  padding: none;
   border-radius: 12px;
   background: black;
 }
-.contentHomeIndex {
-  margin: auto;
-  width: 95%;
-  height: 350px;
-  display: flex;
-  border-radius: 12px;
-  background: black;
+@media (max-width: 768px) {
+  .contentHomeIndex {
+    width: 100%;
+    height: 60%;
+  }
 }
 /*FOOTER*/
 .objFooter {
   position: relative;
   top: 100px;
   margin: 0% 0 0 0;
-  width: 120.5%;
-  min-height: 600px;
+  width: 100.5%;
+  min-height: 565px;
 }

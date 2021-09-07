@@ -3,7 +3,8 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  max-height: 200px;
+  max-height: 240px;
+  margin: 0% 8% 0 8%;
   border-radius: 10px;
 }
 .originSelect input {
@@ -19,12 +20,12 @@
   margin: 2% 0 0 0;
   padding: 0 0 0 3%;
 }
-.originInput{
+.originInput {
   border: none;
-  margin: 0 0 0 -10vw;
-  padding: 1% 15% 0% 13%;
+  margin: 10% 0 0 0vw;
+  padding: 1% 5% 0% 5%;
 }
-.originInput::placeholder{
+.originInput::placeholder {
   color: black;
   font-size: 12px;
 }

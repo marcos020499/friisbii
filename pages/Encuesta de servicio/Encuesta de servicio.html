@@ -21,8 +21,8 @@
 </script>
 </head>
 
-<body>
-  <object data="../../components/header/header.html" class="objHeader"> 
+<body style="background-color: black;">
+  <object data="../../components/header/header.html" class="objHeaderEncuesta"> 
   </object>
  <div class="conditionContainer">
   <div class="conditionContainerInfo">
@@ -40,12 +40,12 @@
         <div>
           <div>
             <div class="starContainer">
-              <div class="experienceNumber">
-                <h4 class="experienceNumberT">1</h4>
-                <h4 class="experienceNumberT">2</h4>
-                <h4 class="experienceNumberT">3</h4>
-                <h4 class="experienceNumberT">4</h4>
-                <h4 class="experienceNumberT">5</h4>
+              <div class="rate1">
+                <h4 class="starInput">1</h4>
+                <h4 class="starInput">2</h4>
+                <h4 class="starInput">3</h4>
+                <h4 class="starInput">4</h4>
+                <h4 class="starInput">5</h4>
               </div>
               <div class="rate">
                 <input type="radio" id="star1" name="rate" value="5"class='starInput'/>
@@ -100,17 +100,14 @@
         </div>
       </div>
       <div style="display: flex; justify-content: center; padding: 0 0 4% 0;">
-        <button class="Mediumbutton">Enviar</button>
+        <button class="Mediumbutton sendButton" style="border: white; font-family: GeomanistBook;">Enviar</button>
       </div>
     </div>
-    <object data="../../components/footer/footer.html" class="objFooter"> 
-    </object>
-  </div>
-  <div class="bar">
-    <h1>Encuesta de Servicio</h1>
+    
   </div>
  </div>
-     
+ <object data="../../components/footer/footer.html" class="objFooter2"> 
+ </object> 
 </body>
 
 </html>

@@ -5,40 +5,171 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 83%;
-  height: 530px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 35rem;
+  max-height: 35rem;
   margin: 0% 0 0 0;
   z-index: 1;
   padding: 0% 0 100% -1px; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
   background: url(https://res.cloudinary.com/marcos020499/image/upload/v1630616685/_untitledimage_7_ff2ndi.png)
-      left/25% auto,
+      left/350px auto,
     url(https://res.cloudinary.com/marcos020499/image/upload/v1630617719/_untitledimage_10_y1upcm.png)
-      right/12%,
+      right/185px,
     black; /* Color between the shapes only on the content and not the padding*/
   background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 0% 0 100% -1px;
+    background: url(https://res.cloudinary.com/marcos020499/image/upload/v1631038927/_untitledimage_7_grebwo.png)
+        left/27% auto,
+      url(https://res.cloudinary.com/marcos020499/image/upload/v1631039038/_untitledimage_10_iizx8h.png)
+        right/24% auto,
+      black; /* Color between the shapes only on the content and not the padding*/
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    padding: 0% 0 100% -1px;
+    background: url(https://res.cloudinary.com/marcos020499/image/upload/v1631038927/_untitledimage_7_grebwo.png)
+        left/33% auto,
+      url(https://res.cloudinary.com/marcos020499/image/upload/v1631039038/_untitledimage_10_iizx8h.png)
+        right/29% auto,
+      black; /* Color between the shapes only on the content and not the padding*/
+    background-repeat: no-repeat;
+  }
+}
+body {
+  padding: 0%;
+  margin: 0%;
 }
 .logoFooter {
   margin: 5% 0 5% 0;
 }
+.infoContainer {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-direction: row;
+}
 .infoFooter {
   display: flex;
-  flex-direction: row;
-  margin: 0 25% 0 25%;
+  flex-direction: column;
+  width: 100%;
+  margin: -10% 0 5% 0;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
   justify-content: space-between;
 }
-.textFooter {
+.infoFooter1 {
   display: flex;
-  margin: 0 25% 0 25%;
-  flex-direction: row;
+  flex-direction: column;
+  margin: -10% 0 5% 0;
+  width: 30%;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
   justify-content: space-between;
 }
+.infoText {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 13px;
+  margin: -10% 0 0 0;
+  white-space: pre;
+  font-family: MontserratExtra;
+  justify-content: space-between;
+}
+.infoText1 {
+  display: flex;
+  font-size: 13px;
+  width: 100%;
+  margin: -10% 0 0 0;
+  flex-direction: row;
+  font-family: MontserratExtra;
+  justify-content: space-between;
+}
+.padInfo {
+  text-align: right;
+  padding: 0 0 0 40%;
+}
+
 .iconFooter {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+.FAQ1 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .logoFooter {
+    margin: 5% 0 0 0;
+  }
+  .infoContainer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .infoFooter {
+    text-align: center;
+    width: 100%;
+    margin: -20% 0 0 0;
+  }
+  .infoFooter1 {
+    margin: 0 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  .FAQ {
+    display: none;
+  }
+  .FAQ1 {
+    display: initial;
+  }
+  .padInfo {
+    text-align: center;
+    padding: 0%;
+  }
+  .infoText {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: -10% 0 0 0;
+  }
+  .infoText1 {
+    justify-content: center;
+    text-align: center;
+  }
+  .infoFirst {
+    position: relative;
+    right: -24%;
+    text-align: center;
+  }
+  .textPadding {
+    padding: 2% 0 7% 0;
+  }
+  .textF {
+    margin: 2%;
+  }
+  .iconFooter {
+    margin: -20% 0 0 0;
+  }
+}
 .iconImgFooter {
   z-index: 2;
   width: 30px;
   margin: 2%;
+}
+
+h5 {
+  font-family: "Geomanist", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  position: relative;
+  top: -10px;
 }

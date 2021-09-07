@@ -24,9 +24,10 @@ body {
 /*Panel de informacion partner*/
 .conditionContainer {
   display: flex;
+  position: relative;
   flex-direction: row;
   overflow: hidden;
-  margin: -4% 0 0 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
+  margin: 0% 0 0 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
   /* to illustrate the space for the content */
   background: black;
 }
