@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../pages/Home/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/geomanist" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+<script>
+  $(".favourite_icon").click(function(){
+ $(this).css({"color": "yellow"}).removeClass('fa-star-o').addClass('fa-star');
+});
+</script>
+</head>
+
+<body>
+  <object data="../../components/header/header.html" class="objHeader"> 
+  </object>
+ <div class="conditionContainer">
+  <div class="conditionContainerInfo">
+    <h1 class="conditionTitle">Encuesta de servicio</h1>
+    <div class="conditionInfo">
+      <h2 class="experienceTitle">Califica tu experiencia con friisbii</h2>
+      <div class="experienceContainer">
+        <div class="experienceInfo">
+          <h3 style="color: white;">.</h3>
+          <h3 class="experienceH3">Profesionalismo</h3>
+          <h3 class="experienceH3">Trato</h3>
+          <h3 class="experienceH3">Servicio</h3>
+          <h3 class="experienceH3">Puntualidad</h3>
+        </div>
+        <div>
+          <div>
+            <div class="starContainer">
+              <div class="experienceNumber">
+                <h4 class="experienceNumberT">1</h4>
+                <h4 class="experienceNumberT">2</h4>
+                <h4 class="experienceNumberT">3</h4>
+                <h4 class="experienceNumberT">4</h4>
+                <h4 class="experienceNumberT">5</h4>
+              </div>
+              <div class="rate">
+                <input type="radio" id="star1" name="rate" value="5"class='starInput'/>
+                <label for="star1" title="text">5 stars</label>
+                <input type="radio" id="star2" name="rate" value="4" class='starInput'/>
+                <label for="star2" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" class='starInput'/>
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star4" name="rate" value="2" class='starInput'/>
+                <label for="star4" title="text">2 stars</label>
+                <input type="radio" id="star5" name="rate" value="1" class='starInput'/>
+                <label for="star5" title="text">1 star</label>
+              </div>
+              <div class="rate">
+                <input type="radio" id="star10" name="rate" value="10" />
+                <label for="star10" title="text">5 stars</label>
+                <input type="radio" id="star9" name="rate" value="9" />
+                <label for="star9" title="text">4 stars</label>
+                <input type="radio" id="star8" name="rate" value="8" />
+                <label for="star8" title="text">3 stars</label>
+                <input type="radio" id="star7" name="rate" value="7" />
+                <label for="star7" title="text">2 stars</label>
+                <input type="radio" id="star6" name="rate" value="6" />
+                <label for="star6" title="text">1 star</label>
+              </div>
+              <div class="rate">
+                <input type="radio" id="star15" name="rate" value="15" />
+                <label for="star15" title="text">5 stars</label>
+                <input type="radio" id="star14" name="rate" value="14" />
+                <label for="star14" title="text">4 stars</label>
+                <input type="radio" id="star13" name="rate" value="13" />
+                <label for="star13" title="text">3 stars</label>
+                <input type="radio" id="star12" name="rate" value="12" />
+                <label for="star12" title="text">2 stars</label>
+                <input type="radio" id="star11" name="rate" value="11" />
+                <label for="star11" title="text">1 star</label>
+              </div>
+              <div class="rate">
+                <input type="radio" id="star20" name="rate" value="20" />
+                <label for="star20" title="text">5 stars</label>
+                <input type="radio" id="star19" name="rate" value="19" />
+                <label for="star19" title="text">4 stars</label>
+                <input type="radio" id="star18" name="rate" value="18" />
+                <label for="star18" title="text">3 stars</label>
+                <input type="radio" id="star17" name="rate" value="17" />
+                <label for="star17" title="text">2 stars</label>
+                <input type="radio" id="star16" name="rate" value="16" />
+                <label for="star16" title="text">1 star</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; padding: 0 0 4% 0;">
+        <button class="Mediumbutton">Enviar</button>
+      </div>
+    </div>
+    <object data="../../components/footer/footer.html" class="objFooter"> 
+    </object>
+  </div>
+  <div class="bar">
+    <h1>Encuesta de Servicio</h1>
+  </div>
+ </div>
+     
+</body>
+
+</html>

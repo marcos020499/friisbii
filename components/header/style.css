@@ -20,15 +20,174 @@
   color: white;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-  margin: 0 30px 0 20px;
+}
+.aHeaderContainer{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1200px) {
+  .aHeaderContainer{
+    display: flex;
+    flex-direction: row;
+  }
+  .buttonsContainer{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 1024px) {
+  .aHeaderContainer{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    justify-content: space-between;
+  }
+  .buttonsContainer{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .aHeaderContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonsContainer{
+    display: flex;
+    flex-direction: column;}
+  }
+  
+.infoHeader{
+  display: flex;
+  flex-direction: row;
 }
 .Register {
   border: none;
-  margin: 0 110px 0 0;
 }
 
 .Sesion {
   background-color: #ffd800;
   border: 1px solid black;
-  margin: 0 15px 0 0;
+}
+/**/
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headers{
+  background-color: #ffd800;
+  box-shadow: 0px 0px 5px 1px black;
+  height: 80px;
+  width: 83%;
+}
+@media (max-width: 768px) {
+  .headers{
+    width: 100%;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  width: 83%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: 6%;
+}
+.nav-item {
+  margin-left: 3rem;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.nav-logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin: 0 0 0  5rem;
+  color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: rgb(255, 216, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(255, 216, 0, 0.8);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd800, endColorstr=#ffd800);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd800, endColorstr=#ffd800)";
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+  }
 }

@@ -106,9 +106,7 @@ body {
 .inputCalendar {
   background: white;
   position: relative;
-  top: 3%;
-  width: 74%;
-  left: 7%;
+
 }
 
 /*HOME*/
@@ -122,14 +120,19 @@ body {
   justify-content: space-between;
 }
 .verticalBar {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  padding: 0%;
-  height: 100%;
-  margin: 0%;
+  font-family: "Montserrat", sans-serif;
   background-color: #ffd800;
   max-width: 17%;
+  min-width: 17%;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: block;
+  position: fixed;
+  overflow: auto;
+  right: 0;
+  top: 0;
 }
 .containerHome {
   display: flex;
@@ -156,7 +159,8 @@ body {
 .homeInfo {
   justify-content: center;
   width: 80%;
-  margin: 5% 14% 0 14%;
+  
+  margin: 2% 14% 0 14%;
   display: flex;
   flex-direction: row;
 }
@@ -165,24 +169,53 @@ body {
   padding: 10% 10% 0 0;
   text-align: left;
 }
+@media (max-width: 1024px) {
+  .homeInfo{
+    margin: 2% 8% 0 8%;
+  }
+  .infoText {
+    width: 50%;
+    padding: 10% 10% 0 0;
+    text-align: left;
+  }
+  .imgInfo {
+    width: 23vw;
+    height: 16vw;
+    position: relative;
+    top: 20%;
+    right: 15%;
+    border-radius: 12px;
+  }
+  .imgInfoTwo {
+    width: 23vw;
+    height: 16vw;
+    border-radius: 12px;
+  }
+}
 .imgInfo {
   z-index: 1;
-  width: 350px;
-  height: 220px;
+  width: 30vw;
+  height: 18vw;
   position: relative;
-  top: 20%;
+  top: 10vw;
   right: 15%;
   border-radius: 12px;
 }
 .imgInfoTwo {
   z-index: 2;
-  width: 350px;
-  height: 220px;
+  width: 30vw;
+  height: 18vw;
   border-radius: 12px;
 }
 .imgInfoC {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1200px) {
+  .imgInfoC{
+    position: relative;
+    top: -30%;
+  }
 }
 .containerInfo {
   margin: 0 0 0 12%;
@@ -191,7 +224,7 @@ body {
   flex-direction: column;
 }
 .registerContainer {
-  margin: 32% 0 0 0;
+  margin: 12vw 0 0 0;
   display: flex;
   flex-direction: row;
 }
@@ -207,6 +240,11 @@ body {
   width: 70%;
   color: white;
   margin: 0 0 4% 0;
+}
+@media (max-width: 1024px) {
+  .registerContainer {
+    margin: 0;
+  }
 }
 .iconContainer {
   display: flex;
@@ -280,7 +318,7 @@ body {
   left: 8%;
 }
 .objOrigin {
-  margin: 0% 0 0 5%;
+  margin: 0% 0 0 0%;
   width: 84%;
 }
 /*CONTENT HOME*/
@@ -297,7 +335,7 @@ body {
 }
 .contentHomeIndex {
   margin: auto;
-  width: 1100px;
+  width: 95%;
   height: 350px;
   display: flex;
   border-radius: 12px;

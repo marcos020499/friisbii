@@ -1,0 +1,146 @@
+/*
+color: #FFD800;
+color: #222529;
+color: #6569DF;
+color: #399ACA;
+color: #24D5D8;
+color: #FECD2F;
+color: #818A91;
+color: #DDDDDD;
+COLOR: #ECEEEF;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Geomanist', sans-serif;
+*/
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+/*Header*/
+.objHeader {
+  width: 100%;
+}
+
+/*Panel de informacion partner*/
+.conditionContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: -4% 0 0 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
+  /* to illustrate the space for the content */
+  background: black;
+}
+.conditionContainerInfo {
+  width: 83%;
+}
+.experienceContainer{
+  display: flex; 
+  flex-direction: row;
+  margin: 4%;
+}
+.experienceNumber{
+  display: flex; flex-direction: row;
+  padding: 0 0 0 4%;
+}
+.experienceNumberT{
+  padding: 0 70px 0 0;
+}
+.experienceInfo{
+  padding: 2% 0 0 0;
+}
+.experienceH3{
+  font-family: "Geomanist", sans-serif;
+  font-size: 14px;
+  padding: 0.6vw;
+}
+.starContainer{
+  margin: 0 0 0 40%;
+}
+.starInput{
+  padding: 0 30px 0 0;
+}
+.conditionTitle {
+  font-family: "Geomanist", sans-serif;
+  color: white;
+  font-size: 35px;
+  padding: 5% 0 3% 0;
+  text-align: center;
+}
+.experienceTitle {
+  font-family: "Geomanist", sans-serif;
+  color: black;
+  font-size: 25px;
+  padding: 0 0 0 5%;
+}
+.conditionInfo {
+  display: flex;
+  margin: 0 15% 0 15%;
+  flex-direction: column;
+  color: black;
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+}
+.conditionP {
+  letter-spacing: 2px;
+  line-height: 35px;
+  font-weight: lighter;
+}
+.bar {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffd800;
+  max-width: 17%;
+  min-width: 17%;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: block;
+  position: fixed;
+  overflow: auto;
+  right: 0;
+  top: 0;
+}
+/*FOOTER*/
+.objFooterP {
+  margin: 0% 0 0 -13%;
+  min-width: 140%;
+  min-height: 600px;
+}
+
+.rate {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 30vw;
+  justify-content: space-between;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}

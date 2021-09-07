@@ -3,21 +3,40 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1100px;
-  height: 200px;
+  width: 95%;
+  height: 350px;
   padding: none;
   margin: none;
   border-radius: 12px;
   background: black;
 }
 
+.partition{
+  display: flex;
+  flex-direction: row;
+}
 .Icons {
   display: flex;
-  width: 100%;
-  margin: -10% 0 0 0;
+  max-width: 100%;
+  margin: -20% 0 0 0;
   justify-content: center;
   flex-direction: row;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .partition{
+    display: flex;
+  flex-direction: row;
+  }
+  .Icons{
+    margin: -25% 0 0 0;
+    display: flex;
+    min-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 .Icon {
   color: white;
@@ -49,9 +68,9 @@
 }
 .inputContainer {
   font-family: "Montserrat", sans-serif;
-  margin: 10px 35px 0 35px;
   display: inline-block;
   justify-content: left;
+  text-align: center;
 }
 .inputButton {
   display: inline;
@@ -67,10 +86,14 @@
   font-size: 14px;
   color: black;
 }
-.buttonInfo {
+.buttonInfos::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  padding: 15px 70px 18px 40px;
+  color: black;
+}
+.buttonInfos {
+  margin: 0 0 0 -4vw;
+  padding: 17px 7vw 17px 4vw;
   border-radius: 7px;
   border: none;
   font-family: "Montserrat", sans-serif;
