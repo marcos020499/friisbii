@@ -243,10 +243,10 @@
   .contentHome {
     width: 100%;
   }
-  .inputInfo{
+  .inputInfo {
     margin: 20px 0 0 0;
   }
-  .inputInfo::placeholder{
+  .inputInfo::placeholder {
     font-size: 10px;
   }
 }

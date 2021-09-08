@@ -69,21 +69,7 @@ body {
     flex-direction: column;
   }
 }
-.bar {
-  font-family: "Montserrat", sans-serif;
-  background-color: #ffd800;
-  max-width: 17%;
-  min-width: 17%;
-  font-size: 13px;
-  color: white;
-  text-align: center;
-  height: 100%;
-  display: block;
-  position: fixed;
-  overflow: auto;
-  right: 0;
-  top: 0;
-}
+
 /*FOOTER*/
 .objFooterT {
   position: relative;
