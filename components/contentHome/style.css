@@ -10,11 +10,17 @@
   border-radius: 12px;
   background: black;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .contentHome {
-    min-height: 400px;
+    height: 400px;
   }
 }
+@media (max-width: 768px) {
+  .contentHome {
+    height: 400px;
+  }
+}
+
 .partition {
   display: flex;
   flex-direction: row;
@@ -23,7 +29,7 @@
   display: flex;
   max-width: 100%;
   min-width: 100%;
-  margin: -20% auto 0 3%;
+  margin: -0% auto 0 3%;
   padding: auto;
   justify-content: center;
   flex-direction: row;
@@ -35,7 +41,22 @@
     flex-direction: row;
   }
   .Icons {
-    margin: -17% 0 0 0;
+    margin: 4% 0 0 0;
+    display: flex;
+    min-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .partition {
+    display: flex;
+    flex-direction: row;
+  }
+  .Icons {
+    margin: -11vw 0 0 0;
     display: flex;
     min-width: 100%;
     text-align: center;
@@ -50,7 +71,7 @@
     flex-direction: row;
   }
   .Icons {
-    margin: -25% 0 0 0;
+    margin: -5% 0 0 0;
     display: flex;
     min-width: 100%;
     text-align: center;
@@ -79,6 +100,7 @@
     min-height: 60px;
   }
 }
+
 .Icon:hover {
   background: #ffd800;
   border-radius: 10px;
@@ -95,6 +117,17 @@
   min-width: 95px;
   max-height: 50px;
   min-height: 50px;
+}
+@media (max-width: 900px) {
+  .iconImgHome {
+    max-width: 70px;
+    min-width: 70px;
+    max-height: 35px;
+    min-height: 35px;
+  }
+  .IconTextHome {
+    font-size: 1px;
+  }
 }
 @media (max-width: 768px) {
   .iconImgHome {
@@ -121,7 +154,7 @@
     padding: 15px 22vw 15px 10px;
   }
   .destino {
-    padding: 15px 22vw 15px 10px;
+    padding: 15px 18vw 15px 10px;
   }
 }
 @media (max-width: 900px) {
@@ -129,7 +162,7 @@
     padding: 15px 19vw 15px 10px;
   }
   .destino {
-    padding: 15px 19vw 15px 10px;
+    padding: 15px 16vw 15px 10px;
   }
 }
 
@@ -170,29 +203,37 @@
   font-family: "Montserrat", sans-serif;
   background: #ffd800;
 }
+@media (max-width: 900px) {
+  .inputContainer {
+    position: relative;
+    top: -4%;
+  }
+}
 @media (max-width: 768px) {
   .inputContainer {
     text-align: center;
+    top: 0%;
     width: 94%;
     display: flex;
     flex-direction: column;
   }
   .inputButton {
     display: flex;
-    width: 99%;
+    width: 100%;
     text-align: center;
   }
   .origen {
-    padding: 8px 18vw 8px 10px;
+    padding: 6px 18vw 6px 10px;
   }
   .destino {
-    padding: 8px 20vw 8px 10px;
+    padding: 6px 20vw 6px 10px;
   }
   .inputEqual {
-    padding: 8px 12vw 8px 10px;
+    padding: 6px 12vw 6px 10px;
   }
   .buttonInfos {
-    padding: 8px 15vw 8px 4vw;
+    margin: 20px 0 0 0;
+    padding: 6px 15vw 6px 4vw;
     border-radius: 7px;
     width: 100%;
     white-space: pre;
@@ -201,5 +242,11 @@
   }
   .contentHome {
     width: 100%;
+  }
+  .inputInfo{
+    margin: 20px 0 0 0;
+  }
+  .inputInfo::placeholder{
+    font-size: 10px;
   }
 }
