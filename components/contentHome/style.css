@@ -141,13 +141,13 @@
   }
 }
 .origen {
-  padding: 15px 26vw 15px 10px;
+  padding: 15px 24vw 15px 30px;
 }
 .destino {
-  padding: 15px 22vw 15px 10px;
+  padding: 15px 20vw 15px 30px;
 }
 .inputEqual {
-  padding: 15px 12vw 15px 10px;
+  padding: 15px 10vw 15px 30px;
 }
 @media (max-width: 1024px) {
   .origen {
@@ -197,7 +197,7 @@
 }
 .buttonInfos {
   margin: 0 0 0 -2vw;
-  padding: 15px 10vw 17px 4vw;
+  padding: 15px 10vw 17px 3vw;
   border-radius: 7px;
   border: none;
   font-family: "Montserrat", sans-serif;
@@ -249,4 +249,22 @@
   .inputInfo::placeholder {
     font-size: 10px;
   }
+}
+
+label {
+  position: relative;
+}
+
+label:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("https://res.cloudinary.com/marcos020499/image/upload/v1631202202/shopping-bag_hjixbv.svg") center / contain no-repeat;
+}
+
+input {
+  padding: 10px 30px;
 }
