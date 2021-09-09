@@ -1,0 +1,142 @@
+/*
+color: #FFD800;
+color: #222529;
+color: #6569DF;
+color: #399ACA;
+color: #24D5D8;
+color: #FECD2F;
+color: #818A91;
+color: #DDDDDD;
+COLOR: #ECEEEF;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Geomanist', sans-serif;
+*/
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.register {
+  background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1631203625/REGI%CC%81STRATE-01_uwvev8.svg);
+  background-size: 100%;
+  padding: 3% 0 0 0;
+}
+.container {
+  background-color: white;
+  display: flex;
+  margin: auto;
+  width: 75%;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 2% 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+}
+.titleC {
+  width: 70%;
+  padding: 0 0 0 10%;
+}
+.title {
+  color: #ffd800;
+  font-size: 40px;
+  font-family: GeomanistBook;
+}
+.pTitle {
+  font-family: "Geomanist", sans-serif;
+  color: #dddddd;
+}
+.iconTitle {
+  width: 10%;
+}
+
+.containerInputs {
+  padding: 0 0 0 10%;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .containerInputs {
+    flex-direction: column;
+  }
+}
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+}
+.labelText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  padding: 4% 0 4% 2%;
+}
+.inputText {
+  padding: 10px 0 10px 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: #eceeef;
+}
+
+.Files {
+  text-align: center;
+  padding: 10px 0vw 10px 0;
+  margin: 0 50% 0 0;
+  border-radius: 12px;
+  border: none;
+  background-color: #eceeef;
+}
+.buttonClass {
+  padding: 6%;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.buttonClassFinal {
+  display: none;
+}
+@media (max-width: 768px) {
+  .buttonClass {
+    display: none;
+  }
+  .buttonClassFinal {
+    display: initial;
+    padding: 8%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .iconTitle {
+    width: 15%;
+  }
+}
+.firstSection {
+  width: 40%;
+  padding: 0 8% 0 0;
+}
+.secondSection {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .firstSection {
+    width: 90%;
+    padding: 0 8% 0 0;
+  }
+  .secondSection {
+    width: 90%;
+  }
+}
+/*FOOTER*/
+.objFooterP {
+  margin: 0% 0 0 -13%;
+  min-width: 140%;
+  min-height: 600px;
+}
+.objCalendar {
+  width: 120%;
+  height: 230px;
+}

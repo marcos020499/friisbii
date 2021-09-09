@@ -14,7 +14,7 @@ font-family: 'Geomanist', sans-serif;
 
 body {
   margin: 0%;
-  background-color: black;
+  background-color: #222529;
   padding: 0%;
 }
 /*Header*/
@@ -29,13 +29,13 @@ body {
   overflow: hidden;
   margin: -4% 0 0 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
   /* to illustrate the space for the content */
-  background: black;
+  background: #222529;
 }
 .conditionContainerInfo {
   width: 100%;
 }
 .conditionTitle {
-  font-family: "Geomanist", sans-serif;
+  font-family: GeomanistBook;
   color: white;
   font-size: 35px;
   padding: 5% 0 3% 0;
@@ -47,23 +47,27 @@ body {
   flex-direction: row;
   color: white;
 }
+.question {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
 .conditionP {
-  letter-spacing: 2px;
-  line-height: 35px;
+  font-family: MontserratL;
+  letter-spacing: 1px;
+  line-height: 25px;
   font-size: 12px;
 }
 @media (max-width: 768px) {
-  .conditionInfo{
+  .conditionInfo {
     flex-direction: column;
   }
 }
 /*FOOTER*/
 .objFooterQuestion {
   padding: 0%;
-  margin: 0%;
+  margin: 0% 0 -1% 0;
   max-width: 100%;
   min-width: 100%;
   min-height: 35rem;
   max-height: 35rem;
-
 }

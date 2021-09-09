@@ -13,7 +13,7 @@ font-family: 'Geomanist', sans-serif;
 */
 
 body {
-  background-color: black;
+  background-color: #222529;
   margin: 0%;
   padding: 0%;
 }
@@ -30,7 +30,7 @@ body {
   overflow: hidden;
   margin: 0% 0 0 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
   /* to illustrate the space for the content */
-  background: black;
+  background: #222529;
 }
 .conditionContainerInfo {
   width: 100%;
@@ -66,6 +66,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .conditionInfo {
     flex-direction: column;
+    text-align: justify;
   }
 }
 /*FOOTER*/

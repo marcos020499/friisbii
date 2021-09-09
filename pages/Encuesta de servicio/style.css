@@ -15,7 +15,7 @@ font-family: 'Geomanist', sans-serif;
 body {
   margin: 0%;
   padding: 0%;
-  background-color: black;
+  background-color: #222529;
 }
 /*Header*/
 .objHeaderEncuesta {
@@ -32,7 +32,7 @@ body {
   overflow: hidden;
   margin: 0 0 0 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
   /* to illustrate the space for the content */
-  background-color: black;
+  background-color: #222529;
 }
 .conditionContainerInfo {
   width: 100%;
@@ -94,7 +94,7 @@ body {
 .conditionInfo {
   display: flex;
   flex-direction: column;
-  color: black;
+  color: #222529;
   background-color: white;
   width: 75%;
   margin: auto;
