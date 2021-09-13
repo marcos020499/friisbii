@@ -60,7 +60,7 @@ body {
   top: 0%;
   width: 80%;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .titlePartner {
     margin: 0%;
   }
@@ -68,7 +68,7 @@ body {
     margin: 0%;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .titlePartner {
     padding: 5% 0 0 10%;
   }
@@ -121,7 +121,7 @@ body {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .iconContP {
     margin: 15% 0 0 0;
   }
@@ -130,7 +130,7 @@ body {
     font-size: 14px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .iconContP {
     margin: -20% 0 0 0;
   }
@@ -175,17 +175,17 @@ body {
   margin: auto;
   font-size: 12px;
 }
-@media (max-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   .titleOptions {
     padding: 0 29% 0 29%;
   }
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .titleOptions {
     padding: 0 25% 0 25%;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .titleOptions {
     padding: 0 20% 0 20%;
     font-size: 30px;
@@ -218,17 +218,17 @@ body {
   line-height: 30px;
   font-family: MontserratL;
 }
-@media (max-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   .titleTime {
     padding: 0 34% 0 34%;
   }
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .titleTime {
     padding: 0 30% 0 30%;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .titleTime {
     padding: 0 26% 0 26%;
   }
@@ -268,12 +268,12 @@ body {
   margin: 100px 0 0 0;
   width: 80%;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .imgStart {
     width: 90%;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .startContainer {
     flex-direction: column;
     margin: 0 0 0 -6%;

@@ -67,7 +67,7 @@ body {
 .starInput {
   padding: 0 0vw 0 0;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .experienceH3 {
     padding: 3vw;
     font-size: 12px;
@@ -130,7 +130,7 @@ body {
   width: 35vw;
   padding: 1vw 0 0 0vw;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .rate1 {
     padding: 0 0 0 1.5vw;
     width: 30vw;
