@@ -63,8 +63,31 @@
   border: 2px solid black;
   letter-spacing: 1px;
   font-family: GeomanistBold;
-  background-color: #ffd800;
+  background-color: white;
   border: 1px solid black;
+}
+.SesionSesion {
+  border: none;
+  width: 160px;
+  padding: 0 0 0 7%;
+  border-radius: 15px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  letter-spacing: 1px;
+  font-family: GeomanistBook;
+  background-color: white;
+}
+.SesionOut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imgButton {
+  margin: 2% 0 0 0;
+  width: 35px;
+  height: 35px;
 }
 @media (max-width: 1024px) {
   .aHeaderContainer {
@@ -80,6 +103,11 @@
   .Register {
     position: relative;
     top: -25px;
+  }
+  .SesionOut {
+    position: relative;
+    top: -25px;
+    left: -7px;
   }
 }
 /**/

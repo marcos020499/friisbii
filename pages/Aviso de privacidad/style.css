@@ -44,10 +44,11 @@ body {
     margin: -4% 0 0 0;
   }
 }
+
 .conditionTitle {
   font-family: GeomanistBook;
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   padding: 2.4% 0 3% 0;
   text-align: center;
 }
@@ -63,15 +64,34 @@ body {
   font-weight: lighter;
   font-family: MontserratExtra;
 }
-@media only screen and (max-width: 1024px) {
+.rigth {
+  margin-right: 6%;
+}
+@media only screen and (max-width: 768px) {
   .conditionInfo {
+    margin: 0 7% 0 7%;
     flex-direction: column;
     text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .rigth {
+    margin-right: 0%;
+  }
+  .conditionTitle {
+    font-family: GeomanistBook;
+    color: white;
+    font-size: 30px;
+    padding: 2.4% 0 2% 7%;
+    text-align: left;
   }
 }
 /*FOOTER*/
-.objFooterP {
-  margin: 0% 0 0 -13%;
-  min-width: 140%;
-  min-height: 600px;
+.objFooterA {
+  padding: 0%;
+  margin: 0% 0 -1% 0;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 35rem;
+  max-height: 35rem;
 }

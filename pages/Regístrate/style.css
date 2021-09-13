@@ -58,7 +58,7 @@ body {
   padding: 0 0 0 10%;
   display: flex;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
@@ -99,7 +99,7 @@ body {
 .buttonClassFinal {
   display: none;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .buttonClass {
     display: none;
   }
@@ -121,7 +121,7 @@ body {
 .secondSection {
   width: 40%;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .firstSection {
     width: 90%;
     padding: 0 8% 0 0;

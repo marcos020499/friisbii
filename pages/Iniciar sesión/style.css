@@ -33,15 +33,18 @@ body {
   flex-direction: column;
   border-radius: 20px;
   padding: 4% 0 0 0;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .sesion {
     flex-direction: column;
   }
   .containerClass {
     width: 80%;
-    
+  }
+  body {
+    background-color: #ffd800;
   }
 }
 .titleContainer {
@@ -114,13 +117,14 @@ body {
   text-align: right;
   flex-direction: column;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .Rigth {
     text-align: center;
     margin: 10% auto;
     background-color: white;
     width: 100%;
     padding: 0 0 15% 0;
+  }
 }
 /*FOOTER*/
 .objFooterP {

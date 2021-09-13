@@ -13,6 +13,12 @@
   font-family: "Geomanist", sans-serif;
   padding: 2% 18% 0 18%;
 }
+@media (max-width: 768px) {
+  .title {
+    padding: auto;
+    font-size: 35px;
+  }
+}
 .a {
   font-family: "Geomanist", sans-serif;
   background-color: #ffd800;
@@ -38,4 +44,13 @@ small {
   position: relative;
   top: -1vw;
   left: 48vw;
+}
+@media (max-width: 768px) {
+  .a {
+    margin: 1vw 18vw 0.2vw 18vw;
+    font-size: 14px;
+  }
+  .small {
+    font-size: 15px;
+  }
 }

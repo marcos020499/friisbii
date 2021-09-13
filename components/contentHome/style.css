@@ -10,12 +10,12 @@
   border-radius: 12px;
   background: black;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .contentHome {
     height: 400px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .contentHome {
     height: 400px;
   }
@@ -35,7 +35,7 @@
   flex-direction: row;
   text-align: center;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .partition {
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@
     flex-direction: column;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .partition {
     display: flex;
     flex-direction: row;
@@ -65,7 +65,7 @@
     flex-direction: column;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .partition {
     display: flex;
     flex-direction: row;
@@ -91,7 +91,7 @@
   font-size: 9px;
   margin: 0 25px 0 0;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .Icon {
     margin: 0 2vw 0 0;
     max-width: 60px;
@@ -118,7 +118,7 @@
   max-height: 50px;
   min-height: 50px;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .iconImgHome {
     max-width: 70px;
     min-width: 70px;
@@ -129,7 +129,7 @@
     font-size: 1px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .iconImgHome {
     max-width: 60px;
     min-width: 60px;
@@ -149,7 +149,7 @@
 .inputEqual {
   padding: 15px 10vw 15px 30px;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .origen {
     padding: 15px 22vw 15px 10px;
   }
@@ -157,7 +157,7 @@
     padding: 15px 18vw 15px 10px;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .origen {
     padding: 15px 19vw 15px 10px;
   }
@@ -203,13 +203,13 @@
   font-family: "Montserrat", sans-serif;
   background: #ffd800;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .inputContainer {
     position: relative;
     top: -4%;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .inputContainer {
     text-align: center;
     top: 0%;
@@ -262,7 +262,8 @@ label:before {
   top: 0;
   bottom: 0;
   width: 20px;
-  background: url("https://res.cloudinary.com/marcos020499/image/upload/v1631202202/shopping-bag_hjixbv.svg") center / contain no-repeat;
+  background: url("https://res.cloudinary.com/marcos020499/image/upload/v1631202202/shopping-bag_hjixbv.svg")
+    center / contain no-repeat;
 }
 
 input {

@@ -26,14 +26,13 @@ body {
 }
 /**/
 .objFindFilter {
-  width: 900px;
-  height: 100px;
+  width: 80%;
+  height: auto;
   padding: none;
-  margin: none;
+  margin: auto;
   display: flex;
   margin: auto;
   border-radius: 12px;
-  background: black;
 }
 
 /*DATA*/

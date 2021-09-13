@@ -19,24 +19,24 @@
     #222529; /* Color between the shapes only on the content and not the padding*/
   background-repeat: no-repeat;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer {
     padding: 0% 0 100% -1px;
     background: url(https://res.cloudinary.com/marcos020499/image/upload/v1631140720/_untitledimage_21_voeupv.png)
-        left/20% auto,
+        left/28% auto,
       url(https://res.cloudinary.com/marcos020499/image/upload/v1631139220/_untitledimage_16_bvdzfc.png)
-        right/20% auto,
+        right/22% auto,
       #222529; /* Color between the shapes only on the content and not the padding*/
     background-repeat: no-repeat;
   }
 }
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .footer {
     padding: 0% 0 100% -1px;
     background: url(https://res.cloudinary.com/marcos020499/image/upload/v1631140720/_untitledimage_21_voeupv.png)
-        left/33% auto,
+        left/38% auto,
       url(https://res.cloudinary.com/marcos020499/image/upload/v1631139220/_untitledimage_16_bvdzfc.png)
-        right/29% auto,
+        right/33% auto,
       #222529; /* Color between the shapes only on the content and not the padding*/
     background-repeat: no-repeat;
   }
@@ -60,7 +60,7 @@ body {
   top: 50px;
   flex-direction: row;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .logoFooter {
     margin: -5% 0 -5% 0;
     top: 0%;
@@ -123,7 +123,7 @@ h3 {
   padding: 0 0 3% 0;
   text-align: left;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .logoFooter {
     margin: 5% 0 0 0;
   }
@@ -188,8 +188,7 @@ h3 {
   width: 30px;
   margin: 2%;
 }
-
-h5 {
+s h5 {
   font-family: "Geomanist", sans-serif;
   letter-spacing: 0.5px;
   font-size: 10px;

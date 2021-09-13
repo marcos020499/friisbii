@@ -57,9 +57,21 @@ body {
   line-height: 25px;
   font-size: 12px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .conditionTitle {
+    padding: 5% 0 3% 7%;
+    text-align: left;
+  }
   .conditionInfo {
+    margin: 0% 8% 0 8%;
     flex-direction: column;
+  }
+  .question {
+    font-size: 16px;
+  }
+  .conditionP {
+    font-size: 13px;
+    line-height: 15px;
   }
 }
 /*FOOTER*/

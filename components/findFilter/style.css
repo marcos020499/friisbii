@@ -1,5 +1,5 @@
 /*CONTENT HOME*/
-.contentHome {
+.contentHomeFilter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,14 +7,14 @@
   height: auto;
   text-align: justify;
   padding: none;
-  margin: none;
+  margin: auto;
   border-radius: 12px;
   background: #222529;
 }
 
 .inputContainer {
   font-family: "Montserrat", sans-serif;
-  margin: 0 20px 0 20px;
+  margin: 15px 20px 15px 20px;
   display: inline-block;
   justify-content: left;
 }
@@ -22,12 +22,16 @@
   display: inline;
 }
 .inputInfo {
-  padding: 10px 10px 10px 23px;
-  margin: 4px;
+  padding: 15px 40px 15px 33px;
+  margin: 0 0 15px 0;
   width: 162px;
   font-size: 10px;
+  width: 210px;
   border-radius: 7px;
   border: none;
+}
+.m3Button {
+  width: 120px;
 }
 .inputInfo::placeholder {
   font-family: "Montserrat", sans-serif;
@@ -36,14 +40,38 @@
 .button768 {
   display: none;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+  .inputContainer {
+    display: inline-flexbox;
+    text-align: center;
+    margin: 3% 0 2% 0;
+  }
+  .inputInfo {
+    margin: 2% 2% 2% auto;
+    width: 37%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .inputContainer {
+    display: inline-flexbox;
+    text-align: center;
+    margin: 3% 0 2% 0;
+  }
+  .inputInfo {
+    margin: 2% 2% 2% auto;
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 768px) {
   .inputContainer {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin: 3% 0 2% 0;
   }
   .inputInfo {
-    margin: 2% auto;
-    width: 80%;
+    margin: 2% 2% 2% auto;
+    width: 75%;
   }
   .button {
     display: none;
@@ -51,7 +79,7 @@
   .button768 {
     display: flex;
     text-align: center;
-    margin: auto;
+    margin: auto auto 4% auto;
   }
 }
 .buttonInfo {
@@ -70,9 +98,9 @@ label {
   content: "";
   position: absolute;
   left: 10px;
-  top: 0;
+  top: 4px;
   bottom: 0;
-  width: 20px;
+  width: 25px;
   background: url("https://res.cloudinary.com/marcos020499/image/upload/v1631228247/SVGS_MENU%CC%81_FRIISBII-08_zs061l.svg")
     center / contain no-repeat;
 }
@@ -82,7 +110,7 @@ label {
   left: 10px;
   top: 0;
   bottom: 0;
-  width: 20px;
+  width: 25px;
   background: url("https://res.cloudinary.com/marcos020499/image/upload/v1631228247/ICONOS-02_sskwmu.svg")
     center / contain no-repeat;
 }
@@ -97,5 +125,16 @@ label {
     center / contain no-repeat;
 }
 input {
-  padding: 10px 30px;
+  padding: 20px 30px;
+}
+@media only screen and (max-width: 768px) {
+  .transport:before {
+    left: 20px;
+  }
+  .map:before {
+    left: 20px;
+  }
+  .calendar:before {
+    left: 20px;
+  }
 }
