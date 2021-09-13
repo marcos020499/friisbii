@@ -40,6 +40,7 @@
 .button768 {
   display: none;
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 1200px) {
   .inputContainer {
     display: inline-flexbox;
@@ -62,6 +63,8 @@
     width: 35%;
   }
 }
+=======
+>>>>>>> fba596ba4caf690b7c4c02f249702c95e84c2835
 @media only screen and (max-width: 768px) {
   .inputContainer {
     display: flex;
