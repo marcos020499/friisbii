@@ -58,16 +58,9 @@ body {
   font-size: 12px;
 }
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
   .conditionTitle {
     padding: 5% 0 3% 7%;
     text-align: left;
-  }
-=======
->>>>>>> fba596ba4caf690b7c4c02f249702c95e84c2835
-  .conditionInfo {
-    margin: 0% 8% 0 8%;
-    flex-direction: column;
   }
   .question {
     font-size: 16px;

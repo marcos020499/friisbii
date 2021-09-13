@@ -19,11 +19,8 @@
     #222529; /* Color between the shapes only on the content and not the padding*/
   background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-=======
+
 @media only screen and (max-width: 768px) {
->>>>>>> fba596ba4caf690b7c4c02f249702c95e84c2835
   .footer {
     padding: 0% 0 100% -1px;
     background: url(https://res.cloudinary.com/marcos020499/image/upload/v1631140720/_untitledimage_21_voeupv.png)
@@ -34,11 +31,7 @@
     background-repeat: no-repeat;
   }
 }
-<<<<<<< HEAD
-@media screen and (max-width: 400px) {
-=======
 @media only screen and (max-width: 400px) {
->>>>>>> fba596ba4caf690b7c4c02f249702c95e84c2835
   .footer {
     padding: 0% 0 100% -1px;
     background: url(https://res.cloudinary.com/marcos020499/image/upload/v1631140720/_untitledimage_21_voeupv.png)
@@ -68,11 +61,7 @@ body {
   top: 50px;
   flex-direction: row;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-=======
 @media only screen and (max-width: 768px) {
->>>>>>> fba596ba4caf690b7c4c02f249702c95e84c2835
   .logoFooter {
     margin: -5% 0 -5% 0;
     top: 0%;
@@ -135,11 +124,7 @@ h3 {
   padding: 0 0 3% 0;
   text-align: left;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-=======
 @media only screen and (max-width: 768px) {
->>>>>>> fba596ba4caf690b7c4c02f249702c95e84c2835
   .logoFooter {
     margin: 5% 0 0 0;
   }
