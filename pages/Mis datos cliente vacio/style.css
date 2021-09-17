@@ -34,23 +34,21 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
 }
-.Sbutton {
+.S1button {
   font-family: "Montserrat", sans-serif;
   color: #818a91;
   background-color: #dddddd;
   border: none;
   width: 180px;
   height: 40px;
-  margin: 0 1% 0 0;
   border-radius: 25px;
 }
-.S1button {
+.Sbutton {
   font-family: "Montserrat", sans-serif;
   color: white;
   background-color: #222529;
   width: 180px;
   height: 40px;
-  margin: 0 1% 0 0;
   border-radius: 25px;
 }
 .divContainers {
@@ -72,7 +70,7 @@ body {
 /*CONTAINER INFO*/
 .containerPersonalInfo {
   border-radius: 25px;
-  width: 30%;
+  width: 40%;
   background-color: #222529;
 }
 .contaIconInfo {
@@ -82,16 +80,6 @@ body {
 .iconInfo {
   margin: 7% 0 0 0;
   width: 50%;
-  z-index: 3;
-  position: relative;
-  left: 25%;
-}
-.iconInfoImg {
-  z-index: 1;
-  position: relative;
-  right: 23%;
-  margin: 7% 0 0 0;
-  width: 45%;
 }
 .nameInfo {
   text-align: center;
@@ -121,7 +109,6 @@ body {
   line-height: 240%;
   color: #ffd800;
   font-size: 13px;
-  text-decoration: none;
   text-align: right;
   font-family: "Montserrat", sans-serif;
 }
@@ -154,7 +141,6 @@ body {
   justify-content: right;
   flex-direction: row;
   align-items: center;
-  padding: 0 0 10% 0;
 }
 .InputType {
   background-color: none;
@@ -173,7 +159,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+@media only screen and (max-width: 1024px) {
+  .containerRigth {
+    margin: auto;
+  }
+}
 @media only screen and (max-width: 768px) {
   .containerRigth {
     width: 95%;
@@ -231,24 +221,23 @@ body {
 .nextTravel {
   color: #dddddd;
   font-family: "Montserrat", sans-serif;
-  margin: 4% 4% 2% 4%;
+  margin: 4% 4% 0 4%;
 }
-.ctnH {
+.ctnH3 {
+  display: flex;
   font-size: 12px;
+  width: 95%;
   margin: 3% auto auto auto;
-  position: relative;
-  left: 4%;
-  width: 80%;
+  border-radius: 30px;
   font-family: "Montserrat", sans-serif;
+  background-color: #ffd800;
 }
-table {
-  position: relative;
-  top: -45px;
-}
-.infoH3 {
-  margin: 10px 0 10px 0px;
-
-  text-align: left;
+.containerH3 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
 }
 .iconImgC {
   margin: 7% 0 0% 0;
@@ -280,57 +269,6 @@ table {
 .displayText {
   display: none;
 }
-.colorBg {
-  background-color: #ffd800;
-  width: 95%;
-  height: 45px;
-  border-radius: 30px;
-  margin: auto;
-}
-.RowC {
-  color: #dddddd;
-  width: 90%;
-  position: relative;
-  left: 4%;
-}
-.folio {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  text-align: left;
-}
-.textRow {
-  font-size: 12px;
-  text-align: left;
-  padding: 15px 0 15px 0;
-  font-family: MontserratL;
-}
-@media only screen and (max-width: 1024px) {
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-  }
-  .buttonsContainer {
-    width: 95%;
-  }
-  .textTitle {
-    margin: 3% 0 3% 8%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .textRow {
-    font-size: 10px;
-  }
-  .folio {
-    font-size: 10px;
-  }
-  .infoH3 {
-    font-size: 12px;
-  }
-  .colorBg {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 768px) {
   .buttons {
     display: flex;
@@ -341,30 +279,10 @@ table {
     position: relative;
     top: -20px;
   }
-  .Sbutton {
-    margin: 0 0 20px 0;
-  }
-  .originNone {
-    display: flex;
-  }
-  .h3DisplayFalse {
-    display: none;
-  }
-  .container7681 {
-    display: none;
-  }
-  .textRow {
-    font-size: 9px;
-  }
-  .folio {
-    font-size: 9px;
-  }
-  .infoH3 {
-    font-size: 10px;
-  }
+
   .ctnH3 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 9px;
     width: 90%;
   }
@@ -372,11 +290,11 @@ table {
     display: flex;
     width: 80%;
     margin: auto;
-    flex-direction: column;
+    flex-direction: row;
   }
   .container768 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .imgReturn {
     width: 15px;

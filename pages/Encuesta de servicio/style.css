@@ -72,6 +72,9 @@ body {
     padding: 3vw;
     font-size: 12px;
   }
+  .experienceTitle {
+    font-size: 20px;
+  }
   .starContainer {
     margin: 0 0 0 5vw;
   }

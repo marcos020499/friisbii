@@ -1,0 +1,190 @@
+/*
+color: #FFD800;
+color: #222529;
+color: #6569DF;
+color: #399ACA;
+color: #24D5D8;
+color: #FECD2F;
+color: #818A91;
+color: #DDDDDD;
+COLOR: #ECEEEF;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Geomanist', sans-serif;
+*/
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.containerPrincipal {
+  background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1631312422/ICONOS_FRIISBII-05-01-01_qjodqd.svg);
+  background-size: 100%;
+  padding: 3% 0 10% 0;
+}
+.container {
+  background-color: #222529;
+  display: flex;
+  margin: auto;
+  width: 78%;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 2% 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  margin: auto;
+}
+.textTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  margin: 2% 0 0 2%;
+}
+.S1button {
+  font-family: "Montserrat", sans-serif;
+  color: #818a91;
+  background-color: #dddddd;
+  border: none;
+  width: 180px;
+  height: 40px;
+  border-radius: 25px;
+}
+.Sbutton {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: black;
+  width: 180px;
+  height: 40px;
+  border-radius: 25px;
+}
+.titleContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.iconTitle {
+  width: 50%;
+}
+.containerInputs {
+  padding: 0 0 0 10%;
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .containerInputs {
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .Sbutton {
+    position: relative;
+    top: -20px;
+  }
+}
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+}
+.labelText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: white;
+  padding: 4% 0 4% 2%;
+}
+.inputText {
+  padding: 10px 0 10px 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: aliceblue;
+}
+.identification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.iconIdentification {
+  width: 85px;
+}
+.SmallbuttonEdit {
+  background-color: #ffd800;
+  width: 130px;
+  height: 36px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+}
+.Files {
+  text-align: center;
+  padding: 10px 0vw 10px 0;
+  margin: 0 50% 0 0;
+  border-radius: 12px;
+  border: none;
+  background-color: #eceeef;
+}
+.buttonClassFinal {
+  padding: 6%;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .buttonClass {
+    display: none;
+  }
+  .iconTitle {
+    width: 30%;
+  }
+  .buttonClassFinal {
+    display: initial;
+    padding: 8%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .identification {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .iconIdentification {
+    width: 140px;
+  }
+}
+.firstSection {
+  width: 40%;
+  padding: 0 8% 0 0;
+}
+.secondSection {
+  width: 40%;
+}
+@media only screen and (max-width: 768px) {
+  .firstSection {
+    width: 90%;
+    padding: 0 8% 0 0;
+  }
+  .secondSection {
+    width: 90%;
+  }
+}
+/*FOOTER*/
+.objFooterEdit {
+  position: relative;
+  margin: 0% 0 0 -13%;
+  min-width: 140%;
+  min-height: 600px;
+}
+.objCalendar {
+  width: 120%;
+  height: 230px;
+}

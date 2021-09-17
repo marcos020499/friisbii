@@ -11,6 +11,16 @@ COLOR: #ECEEEF;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Geomanist', sans-serif;
 */
+.Smlbutton {
+  width: 140px;
+  height: 37px;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #dddddd;
+  font-weight: lighter;
+}
 .objHeader {
   width: 100%;
 }
@@ -54,26 +64,43 @@ body {
 .containerData {
   background-color: #222529;
   display: flex;
-  width: 78%;
+  width: 85%;
   margin: auto;
   border-radius: 15px;
   flex-direction: column;
 }
-.ctnH3 {
-  display: flex;
-  font-size: 12px;
-  width: 95%;
-  margin: 3% auto auto auto;
-  border-radius: 30px;
+.nextTravel {
+  color: #dddddd;
   font-family: "Montserrat", sans-serif;
-  background-color: #ffd800;
+  margin: 4% 4% 0 4%;
 }
-.containerH3 {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  margin: auto;
-  justify-content: space-between;
+.ctnH {
+  font-size: 12px;
+  margin: 3% auto auto auto;
+  position: relative;
+  left: 4%;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+}
+.detailsInfo {
+  position: relative;
+  left: -4%;
+}
+.detailsInfos {
+  position: relative;
+  left: 40px;
+}
+.detailsIcon {
+  width: 50px;
+}
+table {
+  position: relative;
+  top: -15px;
+}
+.infoH3 {
+  margin: 10px 0 10px 0px;
+
+  text-align: left;
 }
 .iconImgC {
   margin: 7% 0 0% 0;
@@ -102,6 +129,70 @@ body {
 .imgReturn {
   width: 20px;
 }
+.displayText {
+  display: none;
+}
+.colorBg {
+  background-color: #ffd800;
+  width: 95%;
+  height: 45px;
+  border-radius: 30px;
+  position: relative;
+  top: 30px;
+  margin: auto;
+}
+.RowC {
+  color: #dddddd;
+  width: 90%;
+  position: relative;
+  left: 4%;
+}
+.folio {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-align: left;
+  max-width: 120px;
+}
+.textRow {
+  font-size: 12px;
+  text-align: left;
+  font-family: MontserratL;
+}
+.originContainer {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+.iconFolio {
+  position: relative;
+  left: 30px;
+  width: 50px;
+}
+.containerFolio {
+  display: flex;
+  align-items: center;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  top: -25px;
+}
+table {
+  width: 100%;
+  min-width: 1200px;
+}
+@media only screen and (max-width: 768px) {
+  .textRow {
+    font-size: 10px;
+  }
+  .folio {
+    font-size: 10px;
+  }
+  .colorBg {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .buttons {
     display: flex;
@@ -111,6 +202,21 @@ body {
   .S1button {
     position: relative;
     top: -20px;
+  }
+  .originNone {
+    display: flex;
+  }
+  .h3DisplayFalse {
+    display: none;
+  }
+  .container7681 {
+    display: none;
+  }
+  .textRow {
+    font-size: 9px;
+  }
+  .folio {
+    font-size: 9px;
   }
   .ctnH3 {
     display: flex;
@@ -126,7 +232,7 @@ body {
   }
   .container768 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .imgReturn {
     width: 15px;
@@ -136,9 +242,6 @@ body {
   }
   .smallText {
     font-size: 14px;
-  }
-  .refil {
-    display: none;
   }
 }
 /*FOOTER*/

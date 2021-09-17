@@ -1,0 +1,244 @@
+/*
+color: #FFD800;
+color: #222529;
+color: #6569DF;
+color: #399ACA;
+color: #24D5D8;
+color: #FECD2F;
+color: #818A91;
+color: #DDDDDD;
+COLOR: #ECEEEF;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Geomanist', sans-serif;
+*/
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.containerPrincipal {
+  background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1631312422/ICONOS_FRIISBII-05-01-01_qjodqd.svg);
+  background-size: 100%;
+  padding: 3% 0 10% 0;
+}
+.container {
+  background-color: #222529;
+  display: flex;
+  margin: auto;
+  width: 82%;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 2% 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.contaIconInfo {
+  display: flex;
+  justify-content: center;
+}
+.iconInfo {
+  margin: 7% 0 0 0;
+  width: 50%;
+  z-index: 3;
+  position: relative;
+  left: 25%;
+}
+.iconInfoImg {
+  z-index: 1;
+  position: relative;
+  right: 23%;
+  margin: 7% 0 0 0;
+  width: 45%;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  margin: auto;
+}
+.textTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  margin: 4% 0 3% 0%;
+}
+.S1button {
+  font-family: "Montserrat", sans-serif;
+  color: #818a91;
+  background-color: #dddddd;
+  border: none;
+  width: 180px;
+  height: 40px;
+  margin: 0 1% 0 0;
+  border-radius: 25px;
+}
+.Sbutton {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: black;
+  width: 180px;
+  height: 40px;
+  margin: 0 1% 0 0;
+  border-radius: 25px;
+}
+.titleContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.iconTitle {
+  width: 50%;
+}
+.containerInputs {
+  margin: auto;
+  display: flex;
+  width: 90%;
+}
+@media only screen and (max-width: 1024px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  .buttonsContainer {
+    width: 95%;
+  }
+  .textTitle {
+    margin: 3% 0 3% 8%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .containerInputs {
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .S1button {
+    position: relative;
+    top: -20px;
+  }
+  .Sbutton {
+    margin: 0 0 20px 0;
+  }
+}
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+}
+.labelText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: white;
+  padding: 4% 0 4% 2%;
+}
+.inputText {
+  padding: 10px 0 10px 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: aliceblue;
+}
+.select {
+  padding: 10px 0 10px 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: aliceblue;
+}
+.identification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.iconIdentification {
+  width: 85px;
+}
+.SmallbuttonEdit {
+  background-color: #ffd800;
+  width: 130px;
+  height: 36px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+}
+.Files {
+  text-align: center;
+  padding: 10px 0vw 10px 0;
+  margin: 0 50% 0 0;
+  border-radius: 12px;
+  border: none;
+  background-color: #eceeef;
+}
+.buttonClassFinal {
+  padding: 6%;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .buttonClass {
+    display: none;
+  }
+  .iconTitle {
+    width: 30%;
+  }
+  .buttonClassFinal {
+    display: initial;
+    padding: 8%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .identification {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .iconIdentification {
+    width: 140px;
+  }
+}
+.firstSection {
+  width: 33%;
+  padding: 0 4% 0 0;
+}
+.secondSection {
+  width: 33%;
+}
+.thirdSection {
+  width: 33%;
+  padding: 0 0 0 4%;
+}
+@media only screen and (max-width: 768px) {
+  .firstSection {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+  }
+  .secondSection {
+    margin: auto;
+    width: 90%;
+  }
+  .thirdSection {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+  }
+}
+/*FOOTER*/
+.objFooterEdit {
+  position: relative;
+  margin: 0% 0 0 -13%;
+  min-width: 140%;
+  min-height: 600px;
+}
+.objCalendar {
+  width: 120%;
+  height: 230px;
+}
