@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../pages/Home/style.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="16x16"  href="../../favicon1/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32"  href="../../favicon1/favicon-32x32.png">
@@ -20,6 +22,9 @@
   <link rel="icon" type="image/png" sizes="192x192"  href="../../favicon1/android-icon-192x192.png">
   <link rel="stylesheet" href="../../pages/Home/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -28,35 +33,42 @@
 </head>
 
 <body>
-  <body>
-    <object data="../../components/header/headerSesionP.html" class="objHeader"> 
-    </object> 
-      <div class="containerClass">
-        <div class="buttonsContainer">
-          <div class="buttons">
-            <button class="Sbutton">Mis datos</button>
-            <button class="S1button">Mis viajes</button>
-            <button class="Sbutton">Metodos de pago</button>
-          </div>
-        </div>
-        <div>
-          <h2 class="textTitle">Solicitud de viaje</h2>
-        </div>
-        <div class="iconTextContainer">
-          <img class="iconHeader" src="https://res.cloudinary.com/marcos020499/image/upload/v1631918503/FRIISBII-22-21_lcfjpj.png" alt="">
-          <div>
-            <h3>Enviar solicitud</h3>
-            <h3>Aprobacion</h3>
-            <h3>Realiza pago</h3>
-            <h3>Agendado</h3>
-          </div>
-        </div>
 
+      <div style="margin: auto;">
   
+        <div class="contentHomeFilter">
+          <div class="inputsContainer">
+                <div class="contaInput">
+                  <i class="fa fa-truck icon"></i>
+                  <input class="input-field inputInfo" type="text" placeholder="Remolque">
+                </div>
+                <div class="contaInput">
+                  <i class="fa fa-map-marker icon"></i>
+                  <input class="input-field inputInfo" type="text" placeholder="Zapopan, Jal">
+                </div>
+                <div class="contaInput">
+                  <i class="fa fa-map-marker icon"></i>
+                  <input class="input-field inputInfo" type="text" placeholder="Monterrey, Nuevo León">
+                </div>
+                <div class="contaInput">
+                  <i class="fa fa-calendar icon"></i>
+                  <input class="input-field inputInfo date" type="text" value="12/09/2021">
+                </div>
+                <div class="contaInput">
+                    
+                  <i class="fa fa-calendar icon"></i>
+                  <input class="input-field inputInfo date" type="text" value="12/09/2021">
+                </div>
+                <div class="contaInput">
+                  <input class="input-field inputInfo m3Button" type="text" placeholder="m3  Dimensiones" style="padding: 15px 63px 15px 10px;">
+                </div>
+              <button class="Processbutton2 button" style="color: black; margin: 0 0 0 15px;">Buscar</button>
+          </div>
+          <div class="button768">
+            <button class="Processbutton Button768" style="color: black;">Buscar</button>
+          </div>
+    </div>
       </div>
-      <object data="../../components/footer/footer.html" class="objFooter"> 
-      </object>    
-     
 </body>
 
 </html>

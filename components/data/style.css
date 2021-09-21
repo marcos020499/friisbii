@@ -1,22 +1,36 @@
 .dataContainer {
-  width: 320px;
-  height: 450px;
-  border: 1px solid black;
+  min-width: 370px;
+  max-width: 370px;
+  height: 510px;
+  margin: 0%;
 }
+
 .imgData {
   width: 110%;
   margin: -6% 0 0 -5%;
   padding: 0%;
   opacity: 100%;
   filter: alpha(opacity=100%);
-  -moz-box-shadow: 2px 2px 5px #999;
-  filter: shadow(color=#999999, direction=135, strength=2);
+}
+.icon-yellow {
+  min-width: 25px;
+  max-width: 25px;
 }
 .dataInfo {
   font-family: "Montserrat", sans-serif;
   color: white;
   position: relative;
-  margin: -45px 0 0 10px;
+  margin: -50px 0 0 10px;
+}
+span {
+  position: relative;
+  left: -8px;
+  font-size: 12px;
+}
+.input-container {
+  display: flex;
+  max-width: 200px;
+  min-width: 200px;
 }
 .dataTitle {
   font-size: 13px;
@@ -27,7 +41,8 @@
   color: #818a91;
   margin: 15px 0 0 10px;
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
 }
 .dataInput {
   color: #818a91;
