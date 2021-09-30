@@ -11,29 +11,54 @@ COLOR: #ECEEEF;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Geomanist', sans-serif;
 */
-.objHeader {
-  width: 100%;
+@font-face {
+  font-family: MontserratB;
+  src: url(../../fonts/Montserrat-Bold.ttf);
 }
 body {
-  background-color: white;
   margin: 0%;
   padding: 0%;
+}
+.Generalsbutton {
+  background-color: #ffd800;
+  width: 166px;
+  height: 38px;
+  border: none;
+  position: relative;
+  top: 15px;
+  border-radius: 15px;
+  font-family: MontserratB;
+  font-size: 13px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  font-weight: 1000;
+}
+.containerPrincipal {
   background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1631312422/ICONOS_FRIISBII-05-01-01_qjodqd.svg);
   background-size: 100%;
-}
-.containerClass {
-  margin: -2% 0 0 0;
-}
-.buttonsContainer {
-  display: flex;
-  flex-direction: column;
-  width: 76%;
-  margin: auto;
+  padding: 3% 0 10% 0;
 }
 .textTitle {
-  margin: 3% 0 2% 12%;
+  margin: 3% 0 4% 2%;
   font-family: MontserratB;
   font-size: 22px;
+}
+.container {
+  background-color: #222529;
+  display: flex;
+  margin: auto;
+  width: 82%;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 2% 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
 }
 .S1button {
   font-family: "Montserrat", sans-serif;
@@ -42,6 +67,7 @@ body {
   border: none;
   width: 180px;
   height: 40px;
+  margin: 0 1% 0 0;
   border-radius: 25px;
 }
 .Sbutton {
@@ -50,8 +76,42 @@ body {
   background-color: black;
   width: 180px;
   height: 40px;
+  margin: 0 1% 0 0;
   border-radius: 25px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .S1button {
+    position: relative;
+    margin: 0 0 20px 0;
+  }
+  .Sbutton {
+    margin: 0 0 40px 0;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
+.containerbutton-text {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+}
+
+/*RUTA VACIA*/
 .containerData {
   background-color: #222529;
   display: flex;
@@ -63,8 +123,9 @@ body {
 .ctnH3 {
   display: flex;
   font-size: 12px;
-  width: 95%;
-  margin: 3% auto auto auto;
+  width: 120%;
+  margin: auto;
+  margin: 3% auto auto -10%;
   border-radius: 30px;
   font-family: "Montserrat", sans-serif;
   background-color: #ffd800;
@@ -72,7 +133,7 @@ body {
 .containerH3 {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 95%;
   margin: auto;
   justify-content: space-between;
 }
@@ -82,12 +143,13 @@ body {
 }
 .textContainer {
   text-align: center;
-  margin: 0 0 5% 0;
+  margin: 0 0 10% 0;
 }
 .pText {
   color: white;
   font-family: GeomanistBook;
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 20px;
 }
 .smallText {
   text-decoration: none;
@@ -116,12 +178,13 @@ body {
   .ctnH3 {
     display: flex;
     flex-direction: column;
+    margin: 5% auto auto auto;
     font-size: 9px;
-    width: 90%;
+    width: 110%;
   }
   .containerH3 {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: auto;
     flex-direction: column;
   }
@@ -142,11 +205,17 @@ body {
     display: none;
   }
 }
+@media only screen and (max-width: 400px) {
+  .containerH3 {
+    font-size: 7px;
+  }
+}
+
 /*FOOTER*/
-.objFooterP {
-  margin: 0% 0 0 -13%;
-  min-width: 140%;
-  min-height: 600px;
+.objFooterEdit {
+  position: relative;
+  min-width: 100%;
+  min-height: 560px;
 }
 .objCalendar {
   width: 120%;

@@ -1,0 +1,108 @@
+.data {
+  position: relative;
+  top: -80px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80.5%;
+  margin: auto;
+  justify-content: space-between;
+}
+.dataContainer {
+  width: 31%;
+  min-width: 320px;
+  height: auto;
+  margin: auto;
+  margin: 0 3px 3% 3px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+@media only screen and (max-width: 1500px) {
+  .data {
+    top: 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .data {
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+  }
+  .dataContainer {
+    justify-content: center;
+    margin: auto auto 3% auto;
+  }
+}
+.imgData {
+  position: relative;
+  left: -4.5%;
+  top: -15%;
+  filter: brightness(70%);
+  width: 110%;
+  padding: 0%;
+  opacity: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .imgData {
+    top: -18px;
+  }
+}
+.icon-yellow {
+  min-width: 25px;
+  max-width: 25px;
+}
+.dataInfo {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  position: relative;
+  margin: -26% 0 0 10px;
+}
+span {
+  position: relative;
+  left: -8px;
+  top: -6px;
+  font-size: 12px;
+}
+.container-part {
+  margin: 0 0 0 5%;
+}
+.input-container {
+  display: flex;
+  max-width: 50%;
+  min-width: 50%;
+}
+.dataTitle {
+  font-size: 15px;
+  padding: 0%;
+  margin: 0 0 0 2%;
+}
+.dataP {
+  color: #818a91;
+  margin: 15px 0 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.dataInput {
+  color: #818a91;
+  margin: 0px 0 0 10px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  width: 110px;
+}
+.dataPrice {
+  padding: 5% 0 5% 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+.dataButton {
+  display: flex;
+  margin: 0 0 5% 0;
+  justify-content: center;
+}
+.Button {
+  border: none;
+}

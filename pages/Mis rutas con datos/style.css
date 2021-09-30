@@ -1,0 +1,118 @@
+/*
+color: #FFD800;
+color: #222529;
+color: #6569DF;
+color: #399ACA;
+color: #24D5D8;
+color: #FECD2F;
+color: #818A91;
+color: #DDDDDD;
+COLOR: #ECEEEF;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Geomanist', sans-serif;
+*/
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.Generalsbutton {
+  background-color: #ffd800;
+  width: 166px;
+  height: 38px;
+  border: none;
+  position: relative;
+  top: 15px;
+  border-radius: 15px;
+  font-family: MontserratB;
+  font-size: 13px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  font-weight: 1000;
+}
+.containerPrincipal {
+  background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1631312422/ICONOS_FRIISBII-05-01-01_qjodqd.svg);
+  background-size: 100%;
+  padding: 3% 0 10% 0;
+}
+.container {
+  background-color: #222529;
+  display: flex;
+  margin: auto;
+  width: 82%;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 2% 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+}
+.S1button {
+  font-family: "Montserrat", sans-serif;
+  color: #818a91;
+  background-color: #dddddd;
+  border: none;
+  width: 180px;
+  height: 40px;
+  margin: 0 1% 0 0;
+  border-radius: 25px;
+}
+.Sbutton {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: black;
+  width: 180px;
+  height: 40px;
+  margin: 0 1% 0 0;
+  border-radius: 25px;
+}
+.textTitle {
+  margin: 3% 0 4% 2%;
+  font-family: MontserratB;
+  font-size: 22px;
+}
+@media only screen and (max-width: 1024px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .S1button {
+    position: relative;
+    margin: 0 0 20px 0;
+  }
+  .Sbutton {
+    margin: 0 0 40px 0;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
+.containerbutton-text {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+}
+/*FOOTER*/
+.objFooterEdit {
+  position: relative;
+  min-width: 100%;
+  min-height: 560px;
+}
+.objCalendar {
+  width: 120%;
+  height: 230px;
+}

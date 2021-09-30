@@ -5,6 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./data.css">
+  <link rel="stylesheet" href="../../components/header/style.css">
   <link rel="icon" type="image/png" sizes="16x16"  href="../../favicon1/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32"  href="../../favicon1/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="57x57" href="../../favicon1/apple-touch-icon-57x57.png">
@@ -28,41 +30,344 @@
 </head>
 
 <body>
-  <object data="../../components/header/header.html" class="objHeader"> 
-  </object>
+
+  <div class="objHeader">
+    <header class="headers">
+      <nav class="navbar">
+          <img  
+class="nav-logo" src="https://res.cloudinary.com/marcos020499/image/upload/v1631114276/ICONO_HEADER-01_lgfxak.svg" alt="">
+          <ul class="nav-menu">
+              <div class="aHeaderContainer">
+                  <li class="nav-item">
+                      <a href="../../pages/Home/Home.html" class="nav-link aHeader" style="color: white;">INICIO</a>
+                  </li>
+                  <li class="nav-item aPadding">
+                      <a href="../../pages/Resultados de Busqueda/Resultados de busqueda.html" class="nav-link aHeader " style="color: white;">BUSCAR</a>
+                  </li>
+                </div>
+              <li class="nav-item">
+                  <a href="../../pages/Login/Login.html" class="nav-link"><button class="Returnbutton Sesion" style="background-color: #ffd800;">Iniciar sesión</button></a>
+              </li>
+              <li class="nav-item">
+                  <a href="../../pages/Registrate/Registrate.html" class="nav-link"><button class="Returnbutton Register" >Regístrate</button></a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+  </header>
+  </div>
   <div class="findResultContainer">
     <object data="../../components/findFilter/find.html" class="objFindFilter"> 
     </object>
-      <div class="dataDisplay">
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
-        <object data="../../components/data/data.html" class="objData"> 
-        </object>
+    <div class="data">
+      
+      <div class="dataContainer" style="display: flex; flex-direction: column; ">
+        <div>
+          <img class="imgData" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/IMA%CC%81GENES_FRIISBII-05_fkid5p.png" alt="">
+          <div class="dataInfo">
+            <h2 class="dataTitle">Trailer 2475</h2>
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-04_w4zvxd.svg" alt="">
+            <span>50</span>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row; padding: 4% 0 0 0;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-06_km2ksb.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Espacio disponible</p>
+              <input class="dataInput" type="text" placeholder="30m3">
+            </div>
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-05_xhxwwx.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Fecha de salida</p>
+              <input class="dataInput" type="text" placeholder="03/11/2020">
+            </div>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Origen</p>
+              <input class="dataInput" type="text" placeholder="Zapopan, GDL">
+            </div>
+          
+            
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Destino</p>
+            <input class="dataInput" type="text" placeholder="Monterrey, NL">
+            </div>
+          </div>
+        </div>
+        <h2 class="dataPrice">$350 / m3</h2>
+        <div class="dataButton">
+          <a href="../../pages/Panel informativo de viaje /Panel informativo de viaje.html"><button class="Processbutton Button">Ver</button></a>
+        </div>
       </div>
+
+      <div class="dataContainer" style="display: flex; flex-direction: column; ">
+        <div>
+          <img class="imgData" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/IMA%CC%81GENES_FRIISBII-05_fkid5p.png" alt="">
+          <div class="dataInfo">
+            <h2 class="dataTitle">Trailer 2475</h2>
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-04_w4zvxd.svg" alt="">
+            <span>50</span>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row; padding: 4% 0 0 0;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-06_km2ksb.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Espacio disponible</p>
+              <input class="dataInput" type="text" placeholder="30m3">
+            </div>
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-05_xhxwwx.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Fecha de salida</p>
+              <input class="dataInput" type="text" placeholder="03/11/2020">
+            </div>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Origen</p>
+              <input class="dataInput" type="text" placeholder="Zapopan, GDL">
+            </div>
+          
+            
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Destino</p>
+            <input class="dataInput" type="text" placeholder="Monterrey, NL">
+            </div>
+          </div>
+        </div>
+        <h2 class="dataPrice">$350 / m3</h2>
+        <div class="dataButton">
+          <a href=""><button class="Processbutton Button">Ver</button></a>
+        </div>
+      </div>
+
+      <div class="dataContainer" style="display: flex; flex-direction: column; ">
+        <div>
+          <img class="imgData" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/IMA%CC%81GENES_FRIISBII-05_fkid5p.png" alt="">
+          <div class="dataInfo">
+            <h2 class="dataTitle">Trailer 2475</h2>
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-04_w4zvxd.svg" alt="">
+            <span>50</span>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row; padding: 4% 0 0 0;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-06_km2ksb.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Espacio disponible</p>
+              <input class="dataInput" type="text" placeholder="30m3">
+            </div>
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-05_xhxwwx.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Fecha de salida</p>
+              <input class="dataInput" type="text" placeholder="03/11/2020">
+            </div>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Origen</p>
+              <input class="dataInput" type="text" placeholder="Zapopan, GDL">
+            </div>
+          
+            
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Destino</p>
+            <input class="dataInput" type="text" placeholder="Monterrey, NL">
+            </div>
+          </div>
+        </div>
+        <h2 class="dataPrice">$350 / m3</h2>
+        <div class="dataButton">
+          <a href=""><button class="Processbutton Button">Ver</button></a>
+        </div>
+      </div>
+
+      <div class="dataContainer" style="display: flex; flex-direction: column; ">
+        <div>
+          <img class="imgData" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/IMA%CC%81GENES_FRIISBII-05_fkid5p.png" alt="">
+          <div class="dataInfo">
+            <h2 class="dataTitle">Trailer 2475</h2>
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-04_w4zvxd.svg" alt="">
+            <span>50</span>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row; padding: 4% 0 0 0;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-06_km2ksb.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Espacio disponible</p>
+              <input class="dataInput" type="text" placeholder="30m3">
+            </div>
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-05_xhxwwx.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Fecha de salida</p>
+              <input class="dataInput" type="text" placeholder="03/11/2020">
+            </div>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Origen</p>
+              <input class="dataInput" type="text" placeholder="Zapopan, GDL">
+            </div>
+          
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Destino</p>
+            <input class="dataInput" type="text" placeholder="Monterrey, NL">
+            </div>
+          </div>
+        </div>
+        <h2 class="dataPrice">$350 / m3</h2>
+        <div class="dataButton">
+          <a href=""><button class="Processbutton Button">Ver</button></a>
+        </div>
+      </div>
+      
+      <div class="dataContainer" style="display: flex; flex-direction: column; ">
+        <div>
+          <img class="imgData" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/IMA%CC%81GENES_FRIISBII-05_fkid5p.png" alt="">
+          <div class="dataInfo">
+            <h2 class="dataTitle">Trailer 2475</h2>
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-04_w4zvxd.svg" alt="">
+            <span>50</span>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row; padding: 4% 0 0 0;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-06_km2ksb.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Espacio disponible</p>
+              <input class="dataInput" type="text" placeholder="30m3">
+            </div>
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-05_xhxwwx.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Fecha de salida</p>
+              <input class="dataInput" type="text" placeholder="03/11/2020">
+            </div>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Origen</p>
+              <input class="dataInput" type="text" placeholder="Zapopan, GDL">
+            </div>
+          
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Destino</p>
+            <input class="dataInput" type="text" placeholder="Monterrey, NL">
+            </div>
+          </div>
+        </div>
+        <h2 class="dataPrice">$350 / m3</h2>
+        <div class="dataButton">
+          <a href=""><button class="Processbutton Button">Ver</button></a>
+        </div>
+      </div>
+
+      <div class="dataContainer" style="display: flex; flex-direction: column; ">
+        <div>
+          <img class="imgData" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/IMA%CC%81GENES_FRIISBII-05_fkid5p.png" alt="">
+          <div class="dataInfo">
+            <h2 class="dataTitle">Trailer 2475</h2>
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-04_w4zvxd.svg" alt="">
+            <span>50</span>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row; padding: 4% 0 0 0;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-06_km2ksb.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Espacio disponible</p>
+              <input class="dataInput" type="text" placeholder="30m3">
+            </div>
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257327/Pa%CC%81gina_14_-_Frisbii-05_xhxwwx.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Fecha de salida</p>
+              <input class="dataInput" type="text" placeholder="03/11/2020">
+            </div>
+          </div>
+        </div>
+        <div class="container-part" style="display: flex; flex-direction: row;">
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Origen</p>
+              <input class="dataInput" type="text" placeholder="Zapopan, GDL">
+            </div>
+          
+          </div>
+          <div class="input-container">
+            <img class="icon-yellow" src="https://res.cloudinary.com/marcos020499/image/upload/v1632257326/Pa%CC%81gina_14_-_Frisbii-07_lgvnw3.svg" alt="">
+            <div class="horizontal">
+              <p class="dataP">Destino</p>
+            <input class="dataInput" type="text" placeholder="Monterrey, NL">
+            </div>
+          </div>
+        </div>
+        <h2 class="dataPrice">$350 / m3</h2>
+        <div class="dataButton">
+          <a href=""><button class="Processbutton Button">Ver</button></a>
+        </div>
+      </div>
+    
+    </div>  
+
+
+
       <div style="display: flex; justify-content: center; padding: 2% 0 2% 0;margin: 100px 0 0 0">
         <button class="Bigbutton buttonB" style="background-color: black; color: white;">Ver màs</button>
       </div>
-    </div>
     
     <object data="../../components/footer/footer.html" class="objFooter"> 
     </object>
   </div>
-  </div>
      
 </body>
-
+<script src="../../components/header/style.js"></script>
 </html>

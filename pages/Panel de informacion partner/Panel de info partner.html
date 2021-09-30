@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../components/header/style.css">
   <link rel="icon" type="image/png" sizes="16x16"  href="../../favicon1/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32"  href="../../favicon1/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="57x57" href="../../favicon1/apple-touch-icon-57x57.png">
@@ -28,8 +29,34 @@
 </head>
 
 <body>
-  <object data="../../components/header/header.html" class="objHeader"> 
-  </object>
+  <div class="objHeader">
+    <header class="headers">
+      <nav class="navbar">
+              <img class="nav-logo" src="https://res.cloudinary.com/marcos020499/image/upload/v1631114276/ICONO_HEADER-01_lgfxak.svg" alt="">
+          <ul class="nav-menu">
+              <div class="aHeaderContainer">
+                  <li class="nav-item">
+                      <a href="../../pages/Home/Home.html" class="nav-link aHeader" style="color: white;">INICIO</a>
+                  </li>
+                  <li class="nav-item aPadding">
+                      <a href="../../pages/Resultados de Busqueda/Resultados de busqueda.html" class="nav-link aHeader " style="color: white;">BUSCAR</a>
+                  </li>
+                </div>
+              <li class="nav-item">
+                  <a href="../../pages/Login/Login.html" class="nav-link"><button class="Returnbutton Sesion" style="background-color: #ffd800;">Iniciar sesión</button></a>
+              </li>
+              <li class="nav-item">
+                  <a href="../../pages/Registrate/Registrate.html" class="nav-link"><button class="Returnbutton Register" >Regístrate</button></a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+  </header>
+  </div>
   <div>
     <div class="panelInfoPartner">
       <div class="panel">
@@ -111,7 +138,7 @@
           <p class="pTime">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et qui nemo maiores blanditiis nulla perferendis dolore placeat sit. Et tenetur numquam sit sunt ab, totam praesentium. Inventore, quibusdam mollitia.</p>
         </div>
         <div class="buttonTime">
-          <button class="Generalbutton" style="border: none;">Regístrate</button>
+         <a href="../../pages/Registrate/Registrate.html"> <button class="Generalbutton" style="border: none;">Regístrate</button></a>
         </div>
         <div class="startContainer">
           <div class="startInfo">
@@ -129,5 +156,5 @@
   </div>
      
 </body>
-
+<script src="../../components/header/style.js"></script>
 </html>

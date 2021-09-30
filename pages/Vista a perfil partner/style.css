@@ -20,7 +20,8 @@ body {
 .containerPrincipal {
   background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1631312422/ICONOS_FRIISBII-05-01-01_qjodqd.svg);
   background-size: 100%;
-  padding: 3% 0 10% 0;
+  padding: 3% 0 1% 0;
+  overflow-y: hidden;
 }
 .container {
   background-color: #222529;
@@ -39,7 +40,8 @@ body {
 }
 .iconInfo {
   margin: 7% 0 0 0;
-  width: 50%;
+  width: 170px;
+  height: 170px;
   z-index: 3;
   position: relative;
   left: 25%;
@@ -47,9 +49,19 @@ body {
 .iconInfoImg {
   z-index: 1;
   position: relative;
-  right: 23%;
-  margin: 7% 0 0 0;
-  width: 45%;
+  right: 25.5%;
+  margin: 10% 0 0 0;
+  width: 150px;
+  height: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .iconInfo {
+    left: 15%;
+  }
+  .iconInfoImg {
+    right: 35.5%;
+    margin: 10% 0 0 0;
+  }
 }
 .buttonsContainer {
   display: flex;
@@ -100,6 +112,7 @@ body {
   }
   .containerInputs {
     flex-direction: column;
+    margin: 0 0 0 12%;
   }
   .buttons {
     display: flex;
@@ -132,13 +145,21 @@ body {
   color: #eceeef;
   font-size: 14px;
 }
+@supports (-webkit-touch-callout: none) {
+  .textInfo {
+    text-decoration: none;
+    color: #eceeef;
+  }
+}
 .identification {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  position: relative;
+  left: -4%;
 }
 .iconIdentification {
   width: 200px;
+  height: 130px;
 }
 .SmallbuttonEdit {
   background-color: #ffd800;
@@ -185,6 +206,16 @@ body {
   }
   .iconIdentification {
     width: 220px;
+    height: 130px;
+  }
+  .textInfo {
+    line-height: 0;
+  }
+  .inputLabel {
+    margin: 0 0 20px 0;
+  }
+  .labelText {
+    padding: 1% 0 0 2%;
   }
 }
 .firstSection {
@@ -220,9 +251,8 @@ body {
 /*FOOTER*/
 .objFooterEdit {
   position: relative;
-  margin: 0% 0 0 -13%;
-  min-width: 140%;
-  min-height: 600px;
+  min-width: 100%;
+  min-height: 560px;
 }
 .objCalendar {
   width: 120%;

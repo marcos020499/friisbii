@@ -31,7 +31,8 @@ body {
   margin: auto;
 }
 .textTitle {
-  font-family: "Montserrat", sans-serif;
+  margin: 3% 0 2% 12%;
+  font-family: MontserratB;
   font-size: 22px;
 }
 .S1button {
@@ -275,7 +276,7 @@ body {
     flex-direction: column;
     margin: auto;
   }
-  .S1button {
+  .Sbutton {
     position: relative;
     top: -20px;
   }

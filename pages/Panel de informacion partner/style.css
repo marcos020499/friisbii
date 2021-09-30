@@ -19,15 +19,18 @@ body {
 }
 /*Header*/
 .objHeader {
+  z-index: 3;
   width: 100%;
 }
 
 /*Panel de informacion partner*/
 .panelInfoPartner {
+  z-index: 1;
   display: flex;
   flex-direction: row;
-  margin: -9% 0 0 0;
-  padding: 0 0 110% 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
+  margin: 0 0 0 0;
+  position: relative;
+  padding: 2% 0 110% 0; /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
   height: 100px; /* to illustrate the space for the content */
   background-image: url(https://res.cloudinary.com/marcos020499/image/upload/v1630620395/trabaja_con_nosotros-01_vctsxs.svg);
   background-size: 100%;
@@ -55,6 +58,7 @@ body {
   font-family: MontserratL;
   letter-spacing: 2px;
   padding: 5% 0 0 20%;
+  font-size: 15px;
   width: 60%;
   color: white;
 }
@@ -114,7 +118,7 @@ body {
 }
 
 .panel {
-  margin: 15% 0 5% 0;
+  margin: 5% 0 5% 0;
   max-width: 100%;
 }
 .iconPartnerr {
@@ -159,6 +163,10 @@ body {
   .partOne {
     position: relative;
     top: -7px;
+  }
+  .panel {
+    margin: 18% 0 5% 0;
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -330,7 +338,7 @@ body {
     min-width: none;
   }
   .startTitle {
-      margin: 10% 0 0 -2%;
+    margin: 10% 0 0 -2%;
     font-size: 28px;
     text-align: center;
     padding: 0%;

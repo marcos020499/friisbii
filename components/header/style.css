@@ -14,7 +14,7 @@
 
 .logo {
   text-align: left;
-  padding: 0 0 0 50px;
+  padding: 0;
 }
 .aHeader {
   text-decoration: none;
@@ -25,6 +25,11 @@
 .aHeaderContainer {
   display: flex;
   flex-direction: row;
+  width: 90%;
+}
+.navbar {
+  position: relative;
+  top: -10px;
 }
 @media only screen and (max-width: 1200px) {
   .aHeaderContainer {
@@ -125,11 +130,6 @@
 }
 /**/
 
-html {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
-}
-
 li {
   list-style: none;
 }
@@ -144,6 +144,7 @@ a {
   height: 80px;
   margin: 0 0 0 0;
   width: 100%;
+  z-index: 3;
 }
 @media only screen and (max-width: 768px) {
   .headers {
@@ -154,7 +155,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.5rem;
   width: 83%;
 }
 
@@ -177,11 +178,11 @@ a {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  left: 6%;
+  left: 7%;
   z-index: 2;
 }
 .nav-item {
-  margin-left: 4rem;
+  margin-left: 2.3rem;
 }
 
 .nav-link {
@@ -196,11 +197,15 @@ a {
 
 .nav-logo {
   width: 150px;
-  margin: 0 0 0 8rem;
+  margin: 0 0 0 7rem;
   color: black;
 }
 
 @media only screen and (max-width: 1024px) {
+  .navbar {
+    position: relative;
+    top: 5px;
+  }
   .nav-menu {
     position: absolute;
     left: -100%;

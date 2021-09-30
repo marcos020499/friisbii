@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../components/header/style.css">
   <link rel="icon" type="image/png" sizes="16x16"  href="../../favicon1/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32"  href="../../favicon1/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="57x57" href="../../favicon1/apple-touch-icon-57x57.png">
@@ -28,17 +29,53 @@
 </head>
 
 <body>
-  <object data="../../components/header/headerSesion.html" class="objHeader"> 
-  </object> 
+  <div class="objHeader">
+    <header class="headers">
+      <nav class="navbar">
+          <img class="nav-logo" src="https://res.cloudinary.com/marcos020499/image/upload/v1631114276/ICONO_HEADER-01_lgfxak.svg" alt="">
+          <ul class="nav-menu">
+              <div class="aHeaderContainer">
+                  <li class="nav-item">
+                      <a href="../../pages/Home/Home.html" class="nav-link aHeader" style="color: white;">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="../../pages/Resultados de Busqueda/Resultados de busqueda.html" class="nav-link aHeader" style="color: white;">BUSCAR</a>
+                  </li>
+                </div>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                      <div class="SesionSesion" >
+                      <p>Hola francisco</p> 
+                      <img class="imgButton" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/IMA%CC%81GENES_FRIISBII-06_k4tloy.png" alt="">
+                  </div></a>
+              </li>
+              <li class="nav-item">
+                  <a href="../../pages/Login/Login.html" class="nav-link">
+                      <div class="SesionOut">
+                          <img src="https://res.cloudinary.com/marcos020499/image/upload/v1631311195/SVGS_MENU%CC%81_FRIISBII-04_nynl5e.svg" alt="">
+                          Salir
+                      </div>
+                  </a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+    </header>
+  </div>
+  
     <div class="containerClass">
       <div class="buttonsContainer">
         <div class="buttons">
-          <button class="S1button">Mis datos</button>
+          <a href="../Mis datos cliente completo/Mis datos.html"><button class="S1button">Mis datos</button></a>
           <button class="Sbutton">Mis viajes</button>
         </div>
-        <div>
-          <h2 class="textTitle">Mis viajes</h2>
-        </div>
+      </div>
+      <div>
+        <h2 class="textTitle">Mis viajes</h2>
       </div>
       <div class="containerData">
         <div class="colorBg">
@@ -100,7 +137,43 @@
               <td class="textRow">Zapopan, Jal</td>
               <td class="textRow">Monterrey, N.L.</td>
               <td class="textRow">03/12/2020</td>
+              <td class="textRow"><button class="Smlbutton" style="background-color: #24D5D8;">Pagado</button></td>
+              <td class="textRow detailsInfo"><img class="detailsIcon" src="https://res.cloudinary.com/marcos020499/image/upload/v1631743277/SVGS_MENU%CC%81_FRIISBII-05_by9pda.svg" alt=""></td>
+            </tr>
+            <tr class="RowC">    
+              <td class="folio"><div class="containerFolio"><h3>16876</h3><img class="iconFolio" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/TRAILER_PAG_29-01_wqems3.png" alt=""></div></td>
+              <td class="textRow">Trailer AHL-678</td>
+              <td class="textRow">Zapopan, Jal</td>
+              <td class="textRow">Monterrey, N.L.</td>
+              <td class="textRow">03/12/2020</td>
+              <td class="textRow"><button class="Smlbutton" style="background-color: #399ACA;">Solicitado</button></td>
+              <td class="textRow detailsInfo"><img class="detailsIcon" src="https://res.cloudinary.com/marcos020499/image/upload/v1631743277/SVGS_MENU%CC%81_FRIISBII-05_by9pda.svg" alt=""></td>
+            </tr>
+            <tr class="RowC">    
+              <td class="folio"><div class="containerFolio"><h3>16876</h3><img class="iconFolio" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/TRAILER_PAG_29-01_wqems3.png" alt=""></div></td>
+              <td class="textRow">Trailer AHL-678</td>
+              <td class="textRow">Zapopan, Jal</td>
+              <td class="textRow">Monterrey, N.L.</td>
+              <td class="textRow">03/12/2020</td>
               <td class="textRow"><button class="Smlbutton" style="background-color: green;">Completado</button></td>
+              <td class="textRow detailsInfo"><img class="detailsIcon" src="https://res.cloudinary.com/marcos020499/image/upload/v1631743277/SVGS_MENU%CC%81_FRIISBII-05_by9pda.svg" alt=""></td>
+            </tr>
+            <tr class="RowC">    
+              <td class="folio"><div class="containerFolio"><h3>16876</h3><img class="iconFolio" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/TRAILER_PAG_29-01_wqems3.png" alt=""></div></td>
+              <td class="textRow">Trailer AHL-678</td>
+              <td class="textRow">Zapopan, Jal</td>
+              <td class="textRow">Monterrey, N.L.</td>
+              <td class="textRow">03/12/2020</td>
+              <td class="textRow"><button class="Smlbutton" style="background-color: #c79108;">Por pagar</button></td>
+              <td class="textRow detailsInfo"><img class="detailsIcon" src="https://res.cloudinary.com/marcos020499/image/upload/v1631743277/SVGS_MENU%CC%81_FRIISBII-05_by9pda.svg" alt=""></td>
+            </tr>
+            <tr class="RowC">    
+              <td class="folio"><div class="containerFolio"><h3>16876</h3><img class="iconFolio" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/TRAILER_PAG_29-01_wqems3.png" alt=""></div></td>
+              <td class="textRow">Trailer AHL-678</td>
+              <td class="textRow">Zapopan, Jal</td>
+              <td class="textRow">Monterrey, N.L.</td>
+              <td class="textRow">03/12/2020</td>
+              <td class="textRow"><button class="Smlbutton" style="background-color: #c79108;">Por pagar</button></td>
               <td class="textRow detailsInfo"><img class="detailsIcon" src="https://res.cloudinary.com/marcos020499/image/upload/v1631743277/SVGS_MENU%CC%81_FRIISBII-05_by9pda.svg" alt=""></td>
             </tr>
           </table>
@@ -113,5 +186,5 @@
     <object data="../../components/footer/footer.html" class="objFooter"> 
     </object>    
 </body>
-
+<script src="../../components/header/style.js"></script>
 </html>

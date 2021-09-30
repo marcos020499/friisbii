@@ -1,16 +1,18 @@
 .dataContainer {
-  min-width: 370px;
-  max-width: 370px;
-  height: 510px;
+  width: 32%;
+  min-width: 320px;
+  height: auto;
   margin: 0%;
+  padding: 0%;
 }
 
 .imgData {
+  position: relative;
+  left: -4.5%;
+  top: -15%;
   width: 110%;
-  margin: -6% 0 0 -5%;
   padding: 0%;
   opacity: 100%;
-  filter: alpha(opacity=100%);
 }
 .icon-yellow {
   min-width: 25px;
@@ -20,22 +22,25 @@
   font-family: "Montserrat", sans-serif;
   color: white;
   position: relative;
-  margin: -50px 0 0 10px;
+  margin: -23% 0 0 10px;
 }
 span {
   position: relative;
   left: -8px;
   font-size: 12px;
 }
+.container-part {
+  margin: 0 0 0 5%;
+}
 .input-container {
   display: flex;
-  max-width: 200px;
-  min-width: 200px;
+  max-width: 50%;
+  min-width: 50%;
 }
 .dataTitle {
-  font-size: 13px;
+  font-size: 15px;
   padding: 0%;
-  margin: 0%;
+  margin: 0 0 0 2%;
 }
 .dataP {
   color: #818a91;
@@ -60,5 +65,9 @@ span {
 }
 .dataButton {
   display: flex;
+  margin: 0 0 5% 0;
   justify-content: center;
+}
+.Button {
+  border: none;
 }

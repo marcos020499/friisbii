@@ -31,6 +31,10 @@ font-family: 'Geomanist', sans-serif;
   font-family: MontserratR;
   src: url(../../fonts/Montserrat-Regular.ttf);
 }
+@font-face {
+  font-family: MontserratB;
+  src: url(../../fonts/Montserrat-Bold.ttf);
+}
 body {
   margin: 0%;
   padding: 0%;

@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../components/header/style.css">
   <link rel="stylesheet" href="../../pages/Home/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <meta name="description" content="Web site created using create-react-app" />
@@ -23,8 +24,35 @@
 </head>
 
 <body style="background-color: #222529;">
-  <object data="../../components/header/header.html" class="objHeaderEncuesta"> 
-  </object>
+  <div class="objHeader">
+    <header class="headers">
+      <nav class="navbar">
+          <img  
+class="nav-logo" src="https://res.cloudinary.com/marcos020499/image/upload/v1631114276/ICONO_HEADER-01_lgfxak.svg" alt="">
+          <ul class="nav-menu">
+              <div class="aHeaderContainer">
+                  <li class="nav-item">
+                      <a href="../../pages/Home/Home.html" class="nav-link aHeader" style="color: white;">INICIO</a>
+                  </li>
+                  <li class="nav-item aPadding">
+                      <a href="../../pages/Resultados de Busqueda/Resultados de busqueda.html" class="nav-link aHeader " style="color: white;">BUSCAR</a>
+                  </li>
+                </div>
+              <li class="nav-item">
+                  <a href="../../pages/Login/Login.html" class="nav-link"><button class="Returnbutton Sesion" style="background-color: #ffd800;">Iniciar sesión</button></a>
+              </li>
+              <li class="nav-item">
+                  <a href="../../pages/Registrate/Registrate.html" class="nav-link"><button class="Returnbutton Register" >Regístrate</button></a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+  </header>
+  </div>
  <div class="conditionContainer">
   <div class="conditionContainerInfo">
     <h1 class="conditionTitle">Encuesta de servicio</h1>
@@ -110,5 +138,5 @@
  <object data="../../components/footer/footer.html" class="objFooter2"> 
  </object> 
 </body>
-
+<script src="../../components/header/style.js"></script>
 </html>

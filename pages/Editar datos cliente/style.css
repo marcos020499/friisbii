@@ -40,9 +40,9 @@ body {
   margin: auto;
 }
 .textTitle {
-  font-family: "Montserrat", sans-serif;
+  margin: 3% 0 2% 12%;
+  font-family: MontserratB;
   font-size: 22px;
-  margin: 2% 0 0 2%;
 }
 .S1button {
   font-family: "Montserrat", sans-serif;
@@ -85,6 +85,11 @@ body {
     flex-direction: column;
     margin: auto;
   }
+  .textTitle {
+    margin: 3% 0 2% 8%;
+    font-family: MontserratB;
+    font-size: 22px;
+  }
   .Sbutton {
     position: relative;
     top: -20px;
@@ -105,6 +110,13 @@ body {
   border-radius: 12px;
   border: none;
   background-color: aliceblue;
+}
+.inputText::placeholder {
+  font-family: MontserratR;
+}
+.date {
+  color: #858484;
+  font-family: MontserratR;
 }
 .identification {
   display: flex;

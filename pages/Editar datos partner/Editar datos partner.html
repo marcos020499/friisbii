@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../components/header/style.css">
   <link rel="icon" type="image/png" sizes="16x16"  href="../../favicon1/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32"  href="../../favicon1/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="57x57" href="../../favicon1/apple-touch-icon-57x57.png">
@@ -28,8 +29,43 @@
 </head>
 
 <body>
-  <object data="../../components/header/headerSesion.html" class="objHeader"> 
-  </object> 
+  <div class="objHeader">
+    <header class="headers">
+      <nav class="navbar">
+          <img class="nav-logo" src="https://res.cloudinary.com/marcos020499/image/upload/v1631114276/ICONO_HEADER-01_lgfxak.svg" alt="">
+          <ul class="nav-menu">
+              <div class="aHeaderContainer">
+                  <li class="nav-item">
+                      <a href="../../pages/Home/Home.html" class="nav-link aHeader" style="color: white;">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="../../pages/Resultados de Busqueda/Resultados de busqueda.html" class="nav-link aHeader" style="color: white;">BUSCAR</a>
+                  </li>
+                </div>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">
+                      <div class="SesionSesion" >
+                      <p>Hola, Josué</p> 
+                      <img class="imgButton" src="https://res.cloudinary.com/marcos020499/image/upload/v1631123076/PAG_35-01_vnssxd.png" alt="">
+                  </div></a>
+              </li>
+              <li class="nav-item">
+                  <a href="../../pages/Login/Login.html" class="nav-link">
+                      <div class="SesionOut">
+                          <img src="https://res.cloudinary.com/marcos020499/image/upload/v1631311195/SVGS_MENU%CC%81_FRIISBII-04_nynl5e.svg" alt="">
+                          Salir
+                      </div>
+                  </a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+    </header>
+  </div> 
   <div class="containerPrincipal">
     <div>
       <div class="buttonsContainer">
@@ -39,9 +75,9 @@
             <button class="Sbutton">Mis vehículos</button>
             <button class="Sbutton">Mis rutas</button>
         </div>
-        <div>
-          <h2 class="textTitle">Editar datos</h2>
-        </div>
+      </div>
+      <div>
+        <h2 class="textTitle">Editar datos</h2>
       </div>
       <div class="register">
         <div class="container">
@@ -124,5 +160,5 @@
     <object data="../../components/footer/footer.html" class="objFooterEdit"> 
     </object>
 </body>
-
+<script src="../../components/header/style.js"></script>
 </html>

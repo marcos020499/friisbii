@@ -1,0 +1,171 @@
+/*
+color: #FFD800;
+color: #222529;
+color: #6569DF;
+color: #399ACA;
+color: #24D5D8;
+color: #FECD2F;
+color: #818A91;
+color: #DDDDDD;
+COLOR: #ECEEEF;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Geomanist', sans-serif;
+*/
+
+.containerData {
+  background-color: #222529;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  border-radius: 15px;
+  flex-direction: column;
+}
+.nextTravel {
+  color: #dddddd;
+  font-family: "Montserrat", sans-serif;
+  margin: 4% 4% 0 4%;
+}
+.ctnH {
+  font-size: 12px;
+  margin: 3% auto auto auto;
+  position: relative;
+  left: 6%;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.detailsIcon {
+  width: 50px;
+}
+table {
+  position: relative;
+  top: -15px;
+}
+.infoH3 {
+  margin: 10px 0 10px 0px;
+
+  text-align: left;
+}
+
+.colorBg {
+  background-color: #ffd800;
+  width: 95%;
+  height: 45px;
+  border-radius: 30px;
+  position: relative;
+  top: 30px;
+  margin: auto;
+}
+.RowC {
+  color: #dddddd;
+  width: 90%;
+  position: relative;
+  left: 6%;
+}
+
+.textRow {
+  font-size: 12px;
+  text-align: left;
+  font-family: MontserratL;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  top: -25px;
+  padding: 2% 0 1% 0;
+}
+table {
+  width: 100%;
+  min-width: 400px;
+  max-width: calc(100% - 90px);
+}
+.origenTh {
+  position: relative;
+  left: -12%;
+}
+.destinoTh {
+  position: relative;
+  left: -7%;
+}
+.accionesTh {
+  position: relative;
+  left: 10%;
+}
+.accionesTd {
+  position: relative;
+  left: 9%;
+}
+@media only screen and (max-width: 1366px) {
+  .accionesTd {
+    left: 8.5%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .accionesTd {
+    left: 8%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .accionesTd {
+    left: 8%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .textRow {
+    font-size: 10px;
+  }
+  .infoH3 {
+    font-size: 13px;
+  }
+  .colorBg {
+    width: 100%;
+  }
+  .origenTh {
+    left: -4%;
+  }
+  .destinoTh {
+    left: 0%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .textRow {
+    font-size: 10px;
+  }
+  .colorBg {
+    width: 100%;
+  }
+  .origenTh {
+    left: -0%;
+  }
+  .destinoTh {
+    left: 2%;
+  }
+  .accionesTh {
+    left: 4%;
+  }
+  .accionesTd {
+    left: 0%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .textRow {
+    font-size: 9px;
+  }
+  .folio {
+    font-size: 9px;
+  }
+  .ctnH3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+    width: 90%;
+  }
+}
+/*FOOTER*/
+
+.objCalendar {
+  width: 120%;
+  height: 230px;
+}

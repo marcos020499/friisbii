@@ -41,7 +41,8 @@ body {
   margin: auto;
 }
 .textTitle {
-  font-family: "Montserrat", sans-serif;
+  margin: 3% 0 2% 12%;
+  font-family: MontserratB;
   font-size: 22px;
 }
 .S1button {
@@ -64,7 +65,7 @@ body {
 .containerData {
   background-color: #222529;
   display: flex;
-  width: 85%;
+  width: 80%;
   margin: auto;
   border-radius: 15px;
   flex-direction: column;
@@ -78,7 +79,7 @@ body {
   font-size: 12px;
   margin: 3% auto auto auto;
   position: relative;
-  left: 4%;
+  left: 6%;
   width: 80%;
   font-family: "Montserrat", sans-serif;
 }
@@ -145,7 +146,7 @@ table {
   color: #dddddd;
   width: 90%;
   position: relative;
-  left: 4%;
+  left: 6%;
 }
 .folio {
   font-family: "Montserrat", sans-serif;
@@ -165,8 +166,8 @@ table {
 }
 .iconFolio {
   position: relative;
-  left: 30px;
-  width: 50px;
+  left: 45px;
+  width: 60px;
 }
 .containerFolio {
   display: flex;
@@ -177,10 +178,20 @@ table {
   justify-content: center;
   position: relative;
   top: -25px;
+  padding: 2% 0 1% 0;
 }
 table {
   width: 100%;
-  min-width: 1200px;
+  min-width: 1190px;
+  max-width: calc(100% - 90px);
+}
+@media only screen and (max-width: 1200px) {
+  .ctnH {
+    left: 4%;
+  }
+  .RowC {
+    left: 4%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .textRow {
