@@ -59,8 +59,8 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .conditionTitle {
-    padding: 5% 0 3% 7%;
-    text-align: left;
+    text-align: center;
+    font-size: 25px;
   }
   .question {
     font-size: 16px;
@@ -68,6 +68,10 @@ body {
   .conditionP {
     font-size: 13px;
     line-height: 15px;
+  }
+  .conditionInfo {
+    width: 90%;
+    margin: auto;
   }
 }
 /*FOOTER*/

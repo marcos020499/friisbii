@@ -67,6 +67,9 @@ body {
   .containerInputs {
     flex-direction: column;
   }
+  .register {
+    padding: 40% 0 0 0;
+  }
 }
 .inputLabel {
   display: flex;
