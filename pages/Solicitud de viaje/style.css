@@ -241,13 +241,16 @@ body {
 .inputText {
   height: 36px;
   padding: 0 0 0 10px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: none;
   background-color: #dddddd;
   font-family: MontserratR;
 }
 select {
   border-radius: 20px;
+}
+.inputText::placeholder {
+  color: black;
 }
 .dimensiones {
   background-color: #eceeef;

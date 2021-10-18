@@ -54,30 +54,35 @@ body {
   padding: 0 7.5vw 0 0;
 }
 .experienceInfo {
-  padding: 1vw 0 0 0;
+  display: flex;
+  flex-direction: column;
+  margin: -20px 0 0 0;
+  padding: 0 0 0 5%;
+  width: 40%;
+}
+@media only screen and (max-width: 1500px) {
+  .experienceInfo {
+    margin: -17px 0 0 0;
+  }
 }
 .experienceH3 {
   font-family: GeomanistBook;
-  font-size: 16px;
-  padding: 1vw;
+  font-size: 17px;
+  padding: 2.1vw 0 0 0;
 }
 .starContainer {
-  margin: 0 0 0 15vw;
+  display: flex;
+  width: 60%;
+  position: relative;
+  left: -12%;
+  flex-direction: column;
 }
 .starInput {
   padding: 0 0vw 0 0;
 }
-@media only screen and (max-width: 768px) {
-  .experienceH3 {
-    padding: 3vw;
-    font-size: 12px;
-  }
-  .experienceTitle {
-    font-size: 20px;
-  }
-  .starContainer {
-    margin: 0 0 0 5vw;
-  }
+.stars-container {
+  position: relative;
+  top: -1.2vw;
 }
 .conditionTitle {
   font-family: GeomanistBook;
@@ -94,6 +99,32 @@ body {
   font-size: 28px;
   padding: 3% 0 0 5%;
 }
+@media only screen and (max-width: 1024px) {
+  .experienceH3 {
+    font-size: 14px;
+    margin: 30px 0 0 0;
+  }
+  .experienceInfo {
+    margin: -20px 0 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .experienceH3 {
+    font-size: 12px;
+    margin: 32px 0 0 0;
+  }
+  .experienceTitle {
+    font-size: 17px;
+    text-align: center;
+  }
+  .conditionTitle {
+    font-size: 25px;
+  }
+  .starContainer {
+    margin: 0 0 0 5vw;
+  }
+}
+
 .conditionInfo {
   display: flex;
   flex-direction: column;
@@ -131,12 +162,99 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   width: 35vw;
-  padding: 1vw 0 0 0vw;
+  padding: 2.35vw 0 0 0vw;
+}
+.rate2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 35vw;
+  padding: 2.35vw 0 0 0vw;
+}
+.rate3 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 35vw;
+  padding: 2.35vw 0 0 0vw;
+}
+.rate4 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 35vw;
+  padding: 2.35vw 0 0 0vw;
 }
 @media only screen and (max-width: 768px) {
   .rate1 {
-    padding: 0 0 0 1.5vw;
-    width: 30vw;
+    width: 40vw;
+    padding: 5px 0 0 1vw;
+  }
+  .rate {
+    padding: 16px 0 0 0vw;
+    width: 42vw;
+  }
+  .rate2 {
+    padding: 30px 0 0 0;
+    width: 42vw;
+  }
+  .rate3 {
+    padding: 30px 0 0 0;
+    width: 42vw;
+  }
+  .rate4 {
+    padding: 30px 0 0 0;
+    width: 42vw;
+  }
+  .experienceH3 {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .rate1 {
+    width: 38vw;
+    padding: 5px 0 0 1vw;
+  }
+  .rate {
+    padding: 16px 0 0 0vw;
+    width: 40vw;
+  }
+  .rate2 {
+    padding: 24px 0 0 0;
+    width: 40vw;
+  }
+  .rate3 {
+    padding: 24px 0 0 0;
+    width: 40vw;
+  }
+  .rate4 {
+    padding: 24px 0 0 0;
+    width: 40vw;
+  }
+  .starContainer {
+    margin: -3% 0 0 5vw;
+  }
+  .experienceH3 {
+    font-size: 10px;
+    margin: 33.5px 0 0 0;
+  }
+  .starContainer {
+    left: -10%;
+  }
+  .experienceInfo {
+    margin: -22px 0 0 0;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .starContainer {
+    margin: -7% 0 0 5vw;
+  }
+  .experienceH3 {
+    font-size: 10px;
+    margin: 35px 0 0 0;
+  }
+  .experienceInfo {
+    margin: -25px 0 0 0;
   }
 }
 .rate:not(:checked) > input {
@@ -168,4 +286,117 @@ body {
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
+}
+
+/*RATE 2*/
+.rate2:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate2:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate2:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate2 > input:checked ~ label {
+  color: #ffc700;
+}
+.rate2:not(:checked) > label:hover,
+.rate2:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate2 > input:checked + label:hover,
+.rate2 > input:checked + label:hover ~ label,
+.rate2 > input:checked ~ label:hover,
+.rate2 > input:checked ~ label:hover ~ label,
+.rate2 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+/*RAT3 */
+.rate3:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate3:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate3:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate3 > input:checked ~ label {
+  color: #ffc700;
+}
+.rate3:not(:checked) > label:hover,
+.rate3:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate3 > input:checked + label:hover,
+.rate3 > input:checked + label:hover ~ label,
+.rate3 > input:checked ~ label:hover,
+.rate3 > input:checked ~ label:hover ~ label,
+.rate3 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/*RATE 4*/
+.rate4:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate4:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate4:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate4 > input:checked ~ label {
+  color: #ffc700;
+}
+.rate4:not(:checked) > label:hover,
+.rate4:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate4 > input:checked + label:hover,
+.rate4 > input:checked + label:hover ~ label,
+.rate4 > input:checked ~ label:hover,
+.rate4 > input:checked ~ label:hover ~ label,
+.rate4 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+@media only screen and (max-width: 768px) {
+  .rate:not(:checked) > label {
+    font-size: 20px;
+    color: #ccc;
+  }
+  .rate2:not(:checked) > label {
+    font-size: 20px;
+    color: #ccc;
+  }
+  .rate3:not(:checked) > label {
+    font-size: 20px;
+    color: #ccc;
+  }
+  .rate4:not(:checked) > label {
+    font-size: 20px;
+    color: #ccc;
+  }
 }

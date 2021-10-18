@@ -51,6 +51,19 @@ body {
   margin: 7% 0 0 0;
   width: 45%;
 }
+@media only screen and (max-width: 768px) {
+  .iconInfo {
+    left: 24%;
+    width: 200px;
+    height: 200px;
+  }
+  .iconInfoImg {
+    width: 170px;
+    max-height: 170px;
+    right: 26.5%;
+    margin: 11% 0 0 0;
+  }
+}
 .buttonsContainer {
   display: flex;
   flex-direction: column;
@@ -138,16 +151,29 @@ body {
   padding: 4% 0 4% 2%;
 }
 .inputText {
-  padding: 10px 0 10px 10px;
+  height: 36px;
+  padding: 0 0 0 10px;
   border-radius: 12px;
   border: none;
   background-color: aliceblue;
 }
-.select {
-  padding: 10px 0 10px 10px;
+.inputText-date {
+  height: 36px;
+  padding: 0 0 0 10px;
   border-radius: 12px;
   border: none;
   background-color: aliceblue;
+}
+.selection {
+  height: 36px;
+  padding: 0 0 0 10px;
+  border-radius: 12px;
+  border: none;
+  color: #5d6163;
+  background-color: aliceblue;
+}
+.date {
+  color: #5d6163;
 }
 .identification {
   display: flex;
